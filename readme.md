@@ -1,4 +1,4 @@
-# SYSU AERO-SWIFT 2022 秋季考核
+# SYSU AERO-SWIFT 2023 秋季考核
 
 ![Swift Team Logo](./logo.jpg)
 
