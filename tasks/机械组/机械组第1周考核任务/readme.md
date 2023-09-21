@@ -1,21 +1,20 @@
-# 欢迎加入机械组考核！！！
-## 机械组考核任务安排
+# 机械组第一周考核任务安排
 
 Author：@LinHuangnan
 
-Revise.1：@PiCaHor
-
-Revise.2：@lay
+Revise: @lay
 
 | 版本 | 说明 |备注|
 | ---- | ---- | ---- |
 | v0.0.0 | 建立文档 |无|
 | v0.0.1 | Revise&更正错别字 |@PiCaHor|
-| v0.0.2 | Revise  | @lay|
-
+| v0.0.2 | Revise |@lay|
 ## 说明
-
+- 第一周考核需要通过3D打印制作机械臂，可以在淘宝上找厂家进行3D打印，开好发票，通过考核将会提供报销
+- 驱动机械臂运动的舵机等零件也需要在淘宝上购买，开好发票，通过考核将提供报销
+- 第一周的任务成果只需提交SolidWorks设计的文件和一份说明文档，写明设计思路和各个文件的作用
 - 很多东西开放实验室(北实验楼C301)都有，要学会去白嫖
+- <font color = red>报销的具体流程在QQ群中</font>
 
 
 ## SolidWorks安装
@@ -24,7 +23,7 @@ Revise.2：@lay
 
 ## 任务安排
 ### 1、自学任务安排 
-- 自学SolidWorks，参考[B站的SolidWorks教程](https://www.bilibili.com/video/BV1iw411Z7HZ?spm_id_from=333.337.search-card.all.click&vd_source=28eca9a455dd3210d721b4694d3c4aa1)，只需要学到`P23附加课7 装配体阵列&镜像与外观`即可
+- 自学SolidWorks，参考[B站的SolidWorks教程](https://www.bilibili.com/video/BV1iw411Z7HZ?spm_id_from=333.337.search-card.all.click&vd_source=28eca9a455dd3210d721b4694d3c4aa1)，只需要学到`P23附加课7 装配体阵列&镜像与外观`即可，**要求较熟练地掌握零件的绘制与装配体的组装**
 - 刷完教程之后，可以跟着B站上的其他画一些有趣的东西，比如旋四翼的建模等等，来巩固刚刚学会的Solidworks基本操作技巧
 
 ### 2、使用SolidWorks设计4自由度机械臂
@@ -55,8 +54,12 @@ Revise.2：@lay
 #### 需要采购的零件如下：
 - 3个955或946舵机
 - 1个SG90舵机
-- M3*10，M3*20，M4*20，M4*30，M4*40螺丝若干，M6*25螺丝若干，M4*60mm螺纹杆，M4*32mm螺纹杆
 - 25个直径6mm的球体
+<font color = darkred>(以下空队实验室可以提供)</font>
+- M3\*10，M3\*20，M4\*20，M4\*30，M4\*40螺丝若干，M6\*25螺丝若干，M4\*60mm螺纹杆，M4\*32mm螺纹杆
+  **注：这里M3\*10是指3mm直径，10毫米是指螺纹长度**
+
+
 
 **注** 开好发票，通过考核即可报销
 
@@ -69,5 +72,6 @@ Revise.2：@lay
 ## 成绩评判
 | 打分项 | 分值 |
 | ---- | ---- | 
-| 设计的零件和装配体 | 200分 |
+| 自学SolidWorks教程| 50分 |
+| 机械结构的设计 | 100 分|
 | 设计文档 | 50分 |
