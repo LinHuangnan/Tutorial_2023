@@ -9,7 +9,9 @@
 2. 学习 Git，熟悉 GitHub 的使用
    - 参考考核仓库给出的教程[基于Git和Github完成考核](https://github.com/LinHuangnan/Tutorial_2023/blob/main/doc/%E5%9F%BA%E4%BA%8Egit%E5%92%8CGitHub%E5%AE%8C%E6%88%90%E8%80%83%E6%A0%B8%E4%BB%BB%E5%8A%A1.md)
 3. 学习 `makefile`和`cmake` 的使用，清楚makefile与cmake的关系。
- - 能够自己编写makefile和cmake文件，将cpp源文件编译成可执行文件
+   
+   - 能够自己编写makefile和cmake文件，将cpp源文件编译成可执行文件
+   
 4. 熟悉linux shell的使用。
    - 熟练掌握linux的基本命令
 5. 安装`ros`；学习使用`ros`。
