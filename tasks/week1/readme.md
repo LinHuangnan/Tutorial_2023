@@ -9,7 +9,8 @@
 2. 学习 Git，熟悉 GitHub 的使用
    - 参考考核仓库给出的教程[基于Git和Github完成考核](https://github.com/LinHuangnan/Tutorial_2023/blob/main/doc/%E5%9F%BA%E4%BA%8Egit%E5%92%8CGitHub%E5%AE%8C%E6%88%90%E8%80%83%E6%A0%B8%E4%BB%BB%E5%8A%A1.md)。
 3. 学习 `makefile`和`cmake` 的使用。
-4. 熟悉linux命令行的使用。
+4. 熟悉linux shell的使用。
+   - 熟练掌握linux的基本命令
 5. 安装`ros`；学习使用`ros`。
 
 ### 本周任务：
