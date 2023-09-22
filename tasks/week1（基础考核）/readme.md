@@ -2,54 +2,65 @@
 
 Author：@LinHuangnan
 
-Revice：
+Revice：@hyjack-00
 
 | 版本 | 说明 |时间|备注|
 | ---- | ---- | ---- |----|
 | v1.0.0 | 第一周基础考核 |2023.9.21| @LinHuangnan |
+| v1.0.1 | 内容微调 | 2023.9.22 | @hyjack-00 |
 
 ### 学习内容：
 
 1. 安装 Linux 操作系统。
-    - 我们建议不熟悉 Linux 系统的同学在虚拟机装系统，而不用双系统，避免损坏你的硬盘。如果对计算机体系和操作系统较熟悉，可以安装双系统。此外，若你的电脑运行win11系统，也可尝试使用 `wsl`
+
+    - 我们建议不熟悉 Linux 系统的同学在虚拟机装系统，而不是双系统，避免损坏你的硬盘。此外，若你的电脑运行win11系统，也可尝试使用 `wsl`
+
 2. 学习 Git，熟悉 GitHub 的使用
-   - 参考考核仓库给出的教程[基于Git和Github完成考核](https://github.com/LinHuangnan/Tutorial_2023/blob/main/doc/%E5%9F%BA%E4%BA%8Egit%E5%92%8CGitHub%E5%AE%8C%E6%88%90%E8%80%83%E6%A0%B8%E4%BB%BB%E5%8A%A1.md)
-3. 学习 `makefile`和`cmake` 的使用，清楚makefile与cmake的关系。
+
+   - 参考考核仓库给出的教程 [基于Git和Github完成考核](../../doc/基于git和GitHub完成考核任务.md)
+
+3. 学习 `makefile` 和 `cmake` 的使用，清楚 makefile 与 cmake 的关系。
    
-   - 能够自己编写makefile和cmake文件，将cpp源文件编译成可执行文件
+   - 能够自己编写 makefile 和 cmake 文件，将 cpp 源文件编译成可执行文件
    
-4. 熟悉linux shell的使用。
-   - 熟练掌握linux的基本命令
-5. 安装`ros`；学习使用`ros`。
+4. 熟悉 linux shell 的使用。
+
+   - 熟练掌握 linux 的基本命令
+
+5. 安装 `ros`；学习使用 `ros`。
 
 ### 本周任务：
 
 #### 1. Reverse Linked List 
+
    - 描述：程序的输入为某一个链表（该链表为单链表）的头节点 head ，请你用C++实现一个类，完成该链表的反转，并返回反转后的链表。
+
    - 示例：输入：1 -> 2 -> 3 -> 4 -> 5 输出 5 -> 4 -> 3 -> 2 -> 1
 
-```cpp
-   /**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode() : val(0), next(nullptr) {}
- *     ListNode(int x) : val(x), next(nullptr) {}
- *     ListNode(int x, ListNode *next) : val(x), next(next) {}
- * };
- */
-class Solution {
-public:
-    ListNode* reverseList(ListNode* head) {
+      ```cpp
+      /**
+      * Definition for singly-linked list.
+      * struct ListNode {
+      *     int val;
+      *     ListNode *next;
+      *     ListNode() : val(0), next(nullptr) {}
+      *     ListNode(int x) : val(x), next(nullptr) {}
+      *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+      * };
+      */
+      class Solution {
+      public:
+         ListNode* reverseList(ListNode* head) {
 
-    }
+         }
 
-};
-```
-   - 在`Linux`环境下使用任何文本编辑工具（vim或者gedit均可）完成 C++ 代码的编写，然后用 `cmake`和`makefile` 编译这个 C++ 程序，注意不要使用任何形式的IDE。
+      };
+      ```   
+
+   - 在 `Linux` 环境下使用任何文本编辑工具（vim或者gedit均可）完成 C++ 代码的编写，然后用 `cmake` 和 `makefile` 编译这个 C++ 程序，注意不要使用任何形式的IDE。
 
 #### 2. Linux Shell
+
 **2.1 写一个脚本**
 
 - 创建目录 `/tmp/scripts`。  
@@ -97,13 +108,14 @@ public:
 
 #### 5.使用git提交
 
-将任务1~4提交到 GitHub 上，并且发起pull request。**在此工程中，请勿提交不重要的中间文件。**（如 `.o` 文件和编译的可执行文件。提示：使用 `.gitignore`）
+将任务1~4提交到你 fork 的 GitHub 仓库上，然后向远程仓库中你的分支发起 pull request。**在此工程中，请勿提交不重要的中间文件，谨慎 commit 任何大于 1M 的文件。**（如 `.o` 文件和编译的可执行文件。提示：使用 `.gitignore`）
 
 ## 成绩评判
+
 | 打分项 | 分值 | 备注 |
 | ---- | ---- | ---- |
 | Reverse Linked List | 40 分|无 |
 | Linux Shell | 60分 | 前两问各15分，第三问30分 |
 | ROS通信机制 | 40分 | 包含ROS安装（完成ROS安装即可得到20分） |
-|Markdown文档编写| 10分 |Markdown文档将作为重要打分依据 |
+| Markdown文档编写| 10分 |Markdown文档将作为重要打分依据 |
 

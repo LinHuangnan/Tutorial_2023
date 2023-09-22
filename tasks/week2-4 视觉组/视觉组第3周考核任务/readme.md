@@ -2,12 +2,12 @@
 
 Author：@Lvjw
 
-Revise: @Huangyj
+Revise: @hyjack-00
 
 | 版本 | 说明 |备注|
 | ---- | ---- | ---- |
 | v0.0.0 | 建立文档 | @Lvjw |
-| v0.1.0 | 补充内容 | @Huangyj |
+| v0.1.0 | 补充内容 | @hyjack-00 |
 
 ## 学习目标
 
@@ -21,7 +21,7 @@ Revise: @Huangyj
 
 ### 具体要求
 
-- 安装 [OpenCV](../../../doc/视觉：基于Opencv完成考核.md)，利用 OpenCV 对任意一张图片进行 灰度化、高斯模糊、边缘检测、膨胀、腐蚀 等基础处理操作。
+- 安装 [OpenCV](../../../doc/视觉：基于OpenCV完成考核.md)，利用 OpenCV 对任意一张图片进行 灰度化、高斯模糊、边缘检测、膨胀、腐蚀 等基础处理操作。
 
 - 调用 OpenCV 已有的库实现人脸识别。
 

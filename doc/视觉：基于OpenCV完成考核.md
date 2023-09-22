@@ -2,12 +2,12 @@
 
 Author：@Louyf
 
-Revise：@Xiezx @Huangyj
+Revise：@Xiezx @hyjack-00
 
 | 版本   | 说明                 | 备注 |
 | ------ | -------------------- | ---- |
 | v0.0.1 | 参考21年wiki建立文档 | @Louyf |
-| v0.0.2 | 修改、完善文档  | @Huangyj |
+| v0.0.2 | 修改、完善文档  | @hyjack-00 |
 
 ## 软件介绍
 
