@@ -16,6 +16,28 @@
 
 ### 本周任务：
 
-1. 在`Linux`环境下使用任何文本编辑工具编辑一个 C++ 程序，然后用 `cmake` 编译这个 C++ 程序, 输出 `Hello World`。请不要使用任何类型的 IDE。
-2. 将整个工程提交到 GitHub 上。**在此工程中，请勿提交不重要的中间文件。**（如 `.o` 文件和编译的可执行文件。提示：使用 `.gitignore`）
-3. 编写一个 package，其中包含一个信息发布节点 `Publisher`，和一个信息订阅节点 `Subscriber`。信息发布节点产生随机数据并发布，要求使用自己创建的自定义消息类型，信息订阅节点订阅话题并将数据输出到终端。
+1. Reverse Linked List 
+   - 描述：程序的输入为某一个链表（该链表为单链表）的头节点 head ，请你用C++实现一个类，完成该链表的反转，并返回反转后的链表。
+   - 示例：输入：1 -> 2 -> 3 -> 4 -> 5 输出 5 -> 4 -> 3 -> 2 -> 1
+         ```cpp
+   /**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
+class Solution {
+public:
+    ListNode* reverseList(ListNode* head) {
+
+    }
+
+};
+    ```
+   - 在`Linux`环境下使用任何文本编辑工具（vscode、vim或者gedit均可）编辑一个 C++ 程序，然后用 `cmake` 编译这个 C++ 程序, 输出 `Hello World`。请不要使用任何类型的 IDE。
+3. 将整个工程提交到 GitHub 上。**在此工程中，请勿提交不重要的中间文件。**（如 `.o` 文件和编译的可执行文件。提示：使用 `.gitignore`）
+4. 编写一个 package，其中包含一个信息发布节点 `Publisher`，和一个信息订阅节点 `Subscriber`。信息发布节点产生随机数据并发布，要求使用自己创建的自定义消息类型，信息订阅节点订阅话题并将数据输出到终端。
