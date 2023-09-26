@@ -10,7 +10,7 @@
 ### 本周任务：
 
 1. 编写 `Service` 和 `Client`，`Client` 产生一个 0 到 1 内的随机浮点数，然后发给 `Service`，`Service` 接受到请求后，判断随机数是否小于 0.5，若是则回应布尔值 1，否则回应 0。`Client` 接收到回应后，先输出产生的随机数，然后输出 `Yes` 或 `No` 到终端。
-2. 利用提供的小车模型和源码，**补全小车模型(little_car/urdf内)，模仿源码并在源码的基础上修改控制代码，试着实现小车的转弯、停止，并使用 `Publisher` 来发布指令来控制小车的方向和速度。详细要求请见 [任务说明](https://github.com/SYSU-AERO-SWIFT/Tutorial_2023/tasks/week2-4 飞控组/task2_description.md)
+2. 利用提供的小车模型和源码，**补全小车模型(ros_project/src/little_car/urdf内)，模仿源码(ros_project/src/little_car/src)并在源码的基础上修改控制代码，试着实现小车的转弯、停止，并使用 `Publisher` 来发布指令来控制小车的方向和速度**。详细要求请见 [任务说明](https://github.com/SYSU-AERO-SWIFT/Tutorial_2023/tasks/week2-4 飞控组/task2_description.md)
 3. 让小车走一个 S 形（注意，我们在小车的行走中将加上噪声，你可能需要使用到PID控制）
 4. 编写 ROS launch 文件并用 `roslaunch` 启动节点。
 5. 提交时请使用 `.gitignore` 忽略追踪中间文件（`build/`、`devel/`等）。
@@ -34,8 +34,12 @@ $ catkin_make
 $ source devel/setup.bash
 $ roslaunch launch/little_car.launch
 ```
+### **如何学习urdf搭建模型**
+
+[ros关于urdf的官方教程](http://wiki.ros.org/cn/urdf)
+
 
 ### **Tips:**
 
-1. 多看 ROS wiki 以及使用搜索引擎将有助于你解决大部分问题。
+1. 本次任务所需知识基本在doc文件夹内， ROS wiki 以及使用搜索引擎将有助于你解决大部分问题。
 2. 对于源码有疑问，可以在群里发问，我们会在合适的范围内给予解答。
