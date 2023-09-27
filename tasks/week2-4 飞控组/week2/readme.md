@@ -6,8 +6,8 @@ Revice：@LinHuangnan
 
 | 版本 | 说明 |时间|备注|
 | ---- | ---- | ---- |----|
-| v1.0.0 | 第二周基础考核 |2023.9.26| @LinHuangnan |
-| v1.0.1 | 内容微调 | 2023.9.27 | @hyjack-00 |
+| v1.0.0 | 第二周基础考核 |2023.9.26| @GuanYufeng |
+| v1.0.1 | 内容微调 | 2023.9.27 | @LinHuangnan |
 
 ### 学习内容：
 1. 熟悉 ROS 的基本操作，包括文件架构、通信机制 (`Publisher`, `Subscriber`, `Service`, `Client`, `msgs`)、包的创建、节点、服务器等。
