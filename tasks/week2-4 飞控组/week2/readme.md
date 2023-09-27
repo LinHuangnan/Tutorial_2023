@@ -10,7 +10,7 @@
 ### 本周任务：
 
 1. 编写 `Service` 和 `Client`，`Client` 产生一个 0 到 1 内的随机浮点数，然后发给 `Service`，`Service` 接受到请求后，判断随机数是否小于 0.5，若是则回应布尔值 1，否则回应 0。`Client` 接收到回应后，先输出产生的随机数，然后输出 `Yes` 或 `No` 到终端。
-2. 利用提供的小车模型和源码，**补全小车模型(ros_project/src/little_car/urdf内)，模仿源码(ros_project/src/little_car/src)并在源码的基础上修改控制代码，试着实现小车的转弯、停止，并使用 `Publisher` 来发布指令来控制小车的方向和速度**。详细要求请见 [任务说明](https://github.com/SYSU-AERO-SWIFT/Tutorial_2023/tasks/week2-4 飞控组/task2_description.md)
+2. 利用提供的小车模型和源码，**补全小车模型(ros_project/src/little_car/urdf内)，模仿源码(ros_project/src/little_car/src)并在源码的基础上修改控制代码，试着实现小车的转弯、停止，并使用 `Publisher` 来发布指令来控制小车的方向和速度**。详细要求请见 [任务说明](./task2_description.md)
 3. 让小车走一个 S 形（注意，我们在小车的行走中将加上噪声，你可能需要使用到PID控制）
 4. 编写 ROS launch 文件并用 `roslaunch` 启动节点。
 5. 提交时请使用 `.gitignore` 忽略追踪中间文件（`build/`、`devel/`等）。
