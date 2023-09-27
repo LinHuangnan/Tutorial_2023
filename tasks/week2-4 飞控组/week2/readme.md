@@ -13,7 +13,7 @@ Revice：@LinHuangnan
 1. 熟悉 ROS 的基本操作，包括文件架构、通信机制 (`Publisher`, `Subscriber`, `Service`, `Client`, `msgs`)、包的创建、节点、服务器等。
 2. 熟悉`roslaunch`的基本使用，进一步了解如何将机器人模型在`.launch`文件中加载到参数服务器上。
 3. 熟悉`urdf`模型构造，进一步了解如何将`urdf`载入至`rviz`仿真器。
-4. 熟悉ROS TF包、了解如何在RVIZ中模拟机器人模型的运动。参考资料：[ROS TF包 官方文档]([tf/Tutorials - ROS Wiki](http://wiki.ros.org/tf/Tutorials))，建议阅读一遍官方文档中的`Learning TF`，以把握基本概念。
+4. 熟悉ROS TF包、了解如何在RVIZ中模拟机器人模型的运动。参考资料：[ROS TF包 官方文档][tf/Tutorials - ROS Wiki](http://wiki.ros.org/tf/Tutorials)，建议阅读一遍官方文档中的`Learning TF`，以把握基本概念。
 5. (附加)学习使用`solidworks`绘制小车模型并导出`urdf`文件。
 
 ### 本周任务：
