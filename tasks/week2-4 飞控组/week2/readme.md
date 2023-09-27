@@ -31,7 +31,7 @@ Revice：@LinHuangnan
 | 完成Service与Client通信           | 50分  |
 | 编写launch文件来启动节点      | 50分 |
 | 搭建小车的urdf模型             | 50分 |
-| 使用solidworks导出模型(选做)  |  50   |
+| 使用solidworks导出模型(选做)  |  50分   |
 | 实现通过Publisher控制小车运动 | 50分 |
 | 让小车走S形（1级噪声）         | 100分 |
 
