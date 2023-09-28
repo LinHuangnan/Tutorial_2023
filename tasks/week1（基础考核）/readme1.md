@@ -120,20 +120,38 @@ int main()
 
 > 首先创建一个工作空间，在终端使用命令
 >> mkdir -p/ZuoYe/src
+
+
 >> cd~/ZuoYe/src
+
+
 >> . catkin_init_workspace
+
+
 > 编译工作空间，   在终端使用命令
+
 >> cd~/ZuoYe/
+
 >> catkin_make
+
 >> catkin_make install
+
 > 设置环境变量 
+
 >> source devel/setup.bash
+
 > 创建功能包       
->> 在文件夹中创建src目录                     
+
+>> 在文件夹中创建src目录    
+
 >>使用命令catkin_create_pkg   文件名  后面加一些依赖如rpscpp等
+
 >> 在src中放入代码文件（看了古月居的视频，代码还是不太会写使用了他的代码）
+
 >> 设置链接库
+
 >> 使用caktin_make 命令进行编译
+
 >> 后进行测试 
 订阅者与发布者的代码放入src文件夹里
 
