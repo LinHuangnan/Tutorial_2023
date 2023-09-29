@@ -1,3 +1,4 @@
+#!/bin/bash
 date -R
 mkdir /tmp/test 
 cd /tmp/test

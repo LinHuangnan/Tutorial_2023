@@ -1,0 +1,9 @@
+/home/tongfakun/tutorial_2023/Tutorial_2023/workspace/week1/ros/catkin_ws/install/_setup_util.py
+/home/tongfakun/tutorial_2023/Tutorial_2023/workspace/week1/ros/catkin_ws/install/env.sh
+/home/tongfakun/tutorial_2023/Tutorial_2023/workspace/week1/ros/catkin_ws/install/setup.bash
+/home/tongfakun/tutorial_2023/Tutorial_2023/workspace/week1/ros/catkin_ws/install/local_setup.bash
+/home/tongfakun/tutorial_2023/Tutorial_2023/workspace/week1/ros/catkin_ws/install/setup.sh
+/home/tongfakun/tutorial_2023/Tutorial_2023/workspace/week1/ros/catkin_ws/install/local_setup.sh
+/home/tongfakun/tutorial_2023/Tutorial_2023/workspace/week1/ros/catkin_ws/install/setup.zsh
+/home/tongfakun/tutorial_2023/Tutorial_2023/workspace/week1/ros/catkin_ws/install/local_setup.zsh
+/home/tongfakun/tutorial_2023/Tutorial_2023/workspace/week1/ros/catkin_ws/install/.rosinstall
