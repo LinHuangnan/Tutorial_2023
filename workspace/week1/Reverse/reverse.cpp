@@ -1,4 +1,5 @@
 
+       //定义链表
        struct ListNode {
           int val;
           ListNode *next;
@@ -6,7 +7,7 @@
           ListNode(int x) : val(x), next(nullptr) {}
           ListNode(int x, ListNode *next) : val(x), next(next) {}
       };
-      
+      //三指针遍历实现反转
       class Solution {
       public:
          ListNode* reverseList(ListNode* head) {
@@ -19,5 +20,4 @@
             }
             return last;
          }
-
       };
