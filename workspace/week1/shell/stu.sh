@@ -1,9 +1,11 @@
+file="stu.txt";  
 #搜索记录
 check(){
-        grep -q "$1:" stu.txt
+        grep -q "$1:" "$file"
 }
 #打印用法
 show_use(){
+        echo "命令错误"
         echo "用法是："
         echo "stu.sh        :显示所有记录"
         echo "stu.sh -a 记录      : 添加一个记录"
@@ -13,62 +15,52 @@ show_use(){
 }
 #显示文件
 show(){
-        cat stu.txt
-}
-#添加记录
-add(){
-    id  = $(echo $1 | cut -d ':' -f1)
-    if check $id; then
-    echo "记录 $id 已经存在"
-    grep "$id:" stu.txt
-    exit 1
-    else
-        echo "$1" >> stu.txt
-    fi
-}
-#删除记录
-Delete(){
-    id = "$1"
-    if check $id; then
-    read -p "你确定删除 $id?(yes/no)" confirm
-    if [[$confirm == "y" || $confirm == "yes"]]; then
-        sed -i "/^$id:/d" stu.txt
-    fi
-    else
-        echo "不存在该条记录"
-    fi
-}
-#搜索记录
-search(){
-    id = "$1"
-    if check $id; then
-        grep "^$id:"  stu.txt
-    else
-        echo "不存在该条记录"
-    fi
+        cat $file
 }
 
-if [ $#==0  ]; then
-    show
-fi
-if [ $#==2 ]; then
-    op=$1
-    argument=$2
-    case $op in
+if [ $# -eq 0  ]; then
+    cat $file
+elif [ $# -eq 2 ]; then
+    case $1 in
     -a)
-        add $argument
+        massage=$(echo $2 | cut -d ':' -f1);
+        if check $massage; then
+        echo "记录$massage 已经存在"
+        grep "$massage:" $file
+        exit 1
+        else
+            echo "记录被加入"
+            echo "$2" >> $file
+        fi
         ;;
     -d)
-        Delete $argument
+       massage1=$(echo $2 | cut -d ':' -f1);
+        if check $massage1; then
+        read -p "你确定删除?(y/n)" confirm
+        if [ $confirm=="y"  ]; then
+            sed -i "/$2/d" "$file"
+            echo "删除成功"
+        else
+            echo "操作取消"
+        fi
+        else
+            echo "不存在该条记录"
+        fi
         ;;
     -s)
-        search $argument
+        massage2=$(echo $2 | cut -d ':' -f1);
+        if check $massage2; then
+            echo "记录被找到"
+            grep "$massage2:" $file
+        else
+            echo "不存在该条记录"
+        fi
         ;;
     *)
-        show_use
+        show_use;
+        exit
         ;;
     esac
-fi
-if [ [$#!=0 && $#!=2 ] ];then
-    show_use    
+else
+    show_use
 fi
