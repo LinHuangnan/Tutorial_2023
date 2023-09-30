@@ -345,8 +345,8 @@ function judgeD(){
 ![stu1.png](https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week1/week1_asset/stu1.png)
 
 `-a` 选项
-![[stu2.png](https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week1/week1_asset/stu2.png)
-![[stu3.png](https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week1/week1_asset/stu3.png)
+![stu2.png](https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week1/week1_asset/stu2.png)
+![stu3.png](https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week1/week1_asset/stu3.png)
 
 `-s`选项
 ![stu4.png](https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week1/week1_asset/Stu4.png)
