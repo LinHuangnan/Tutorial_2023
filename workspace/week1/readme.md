@@ -349,7 +349,7 @@ function judgeD(){
 ![stu3.png](https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week1/week1_asset/stu3.png)
 
 `-s`选项
-![stu4.png](https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week1/week1_asset/Stu4.png)
+![stu4.png](https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week1/week1_asset/stu4.png)
 
 
 `-d`选项
