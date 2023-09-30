@@ -1,2 +1,0 @@
-package
--DCATKIN_DEVEL_PREFIX=/home/tongfakun/tutorial_2023/Tutorial_2023/workspace/week1/ros/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/tongfakun/tutorial_2023/Tutorial_2023/workspace/week1/ros/catkin_ws/install -G Unix Makefiles
