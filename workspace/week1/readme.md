@@ -350,6 +350,8 @@ function judgeD(){
 
 `-s`选项
 ![stu4.png](https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week1/week1_asset/Stu4.png)
+
+
 `-d`选项
 ![stu5](https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week1/week1_asset/stu5.png)
 
@@ -373,6 +375,7 @@ function judgeD(){
 跟着教程创建了一个工作空间`catkin_ws`，创建了功能包`package`
 并安装了它的`depends`，并`bulid`成功。下图是功能包的文件目录
 ![package_tree.png](https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week1/week1_asset/package_tree.png)
+
 
 1.创建在功能包目录下创建`msg`目录，并创建自己的消息类型
 ![package_msg.png](https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week1/week1_asset/package_msg.png)
