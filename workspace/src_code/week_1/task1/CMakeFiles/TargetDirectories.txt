@@ -1,3 +1,0 @@
-/home/lbm/Desktop/Tutorial_2023/workspace/main/week_1/task1/CMakeFiles/rebuild_cache.dir
-/home/lbm/Desktop/Tutorial_2023/workspace/main/week_1/task1/CMakeFiles/edit_cache.dir
-/home/lbm/Desktop/Tutorial_2023/workspace/main/week_1/task1/CMakeFiles/task_1.dir
