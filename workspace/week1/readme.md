@@ -6,7 +6,7 @@ Date ： 2023-09-30
 之后便可以前往[ubuntu的官网](https://ubuntu.com/)去下载对应的版本的文件
 最后再根据[这个步骤](https://blog.csdn.net/ZChen1996/article/details/106042635)来按图索骥即可
 效果应该是这样的
-![Alt text](image.png)
+[![Alt text](image.png)](https://github.com/tfk12318/Tutorial_2023/blob/main/workspace/week1/image/image.png)
 **注意**
 - hyper-v与VMware存在冲突，不要同时使用
 - hyper-v存在网络问题，其中的虚拟机会网速会只有几k
