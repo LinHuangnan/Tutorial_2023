@@ -5,6 +5,7 @@ Date ： 2023-09-30
 在Windows下，有自带的Hyper-v虚拟机,通过[某些方法](https://zhuanlan.zhihu.com/p/51939654)来在家庭版下使用它，
 之后便可以前往[ubuntu的官网](https://ubuntu.com/)去下载对应的版本的文件
 最后再根据[这个步骤](https://blog.csdn.net/ZChen1996/article/details/106042635)来按图索骥即可
+
 **注意**
 - hyper-v与VMware存在冲突，不要同时使用
 - hyper-v存在网络问题，其中的虚拟机会网速会只有几k
@@ -53,6 +54,7 @@ $make
 ```
 即可启动编译
 具体效果如下
+
 ![Alt text](<image/2023-09-30 16-06-29 的屏幕截图.png>)
 
 可以看到我们生成了一个reverse.o文件
