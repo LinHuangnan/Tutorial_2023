@@ -46,7 +46,7 @@ class Solution {
 
 ## 1.2编译过程和结果
 先粗糙的利用`cmake .`生成`makefile`，再利用`make`编译得到可执行文件`rrl`
-![compile.png]()
+![compile.png](https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week1/week1_asset/rrl_compile.png)
 `rrl`是`reserved-linked-list`的缩写
 之后发现好像`reversed`才对，但是已经编译了哈哈哈
 
@@ -92,8 +92,8 @@ yuanyue ALL=(ALL)       NOPASSWD: ALL
 最后为了标记脚本运行状态
 在每一步后面加上`echo`指令进行提示
 
-![[413d35f30588c73ff93886e24917b46.png]]
-![[0640411e2410410a124ed8ff60141f0.png]]
+![script2.1.png.png](https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week1/week1_asset/script2.1.png)
+![script2.1result.png](https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week1/week1_asset/script2.1.result.png)
 
 ### 7.总结
 完成了基本的任务要求
@@ -130,7 +130,7 @@ yuanyue ALL=(ALL)       NOPASSWD: ALL
 并考虑到该脚本输出内容过多
 于是使用`-----`来进行分割
 
-![[26c8b06197a04995f412f9bc5050ce0.png]]
+![script2.2.png](https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week1/week1_asset/script2.2.png)
 
 ## 2.3stu.sh思路
 
@@ -342,15 +342,16 @@ function judgeD(){
 进行了本土化翻译，告诉用户相关说明，并给出例子
 
 ### 6.脚本优化和结果
-![[Pasted image 20230926190440.png]]
+![stu1.png](https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week1/week1_asset/stu1.png)
 
 `-a` 选项
-![[Pasted image 20230926192606.png]]
-`-s`选项
-![[Pasted image 20230926192804.png]]
+![[stu2.png](https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week1/week1_asset/stu2.png)
+![[stu3.png](https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week1/week1_asset/stu3.png)
 
+`-s`选项
+![stu4.png](https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week1/week1_asset/Stu4.png)
 `-d`选项
-![[Pasted image 20230926192859.png]]
+![stu5](https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week1/week1_asset/stu5.png)
 
 
 
@@ -362,8 +363,8 @@ function judgeD(){
 利用ROS1自带的小海龟验证ROS1的正常运行
 
 以下是运行截图
-![[7434fd9afaacec5b65ea6d54e90cb99.png]]
-![[e90424005e166e05409c91d7adeecd7.png]]
+![roscore.png](https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week1/week1_asset/roscore.png)
+![rosturtle.png](https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week1/week1_asset/ros_test.png)
 
 
 
@@ -371,10 +372,10 @@ function judgeD(){
 ### 3.2.1环境搭建
 跟着教程创建了一个工作空间`catkin_ws`，创建了功能包`package`
 并安装了它的`depends`，并`bulid`成功。下图是功能包的文件目录
-![[Pasted image 20230930163453.png]]
+![package_tree.png](https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week1/week1_asset/package_tree.png)
 
 1.创建在功能包目录下创建`msg`目录，并创建自己的消息类型
-![[Pasted image 20230930161803.png]]
+![package_msg.png](https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week1/week1_asset/package_msg.png)
 
 2.编辑`package.xml`文件
 - 添加`<build_depend>` 和`<exec_depend>`开头的依赖
@@ -465,13 +466,13 @@ int main(int argc, char **argv)
 经过几次编译失败，`debug`，运行结果如下
 
 `Punlisher`文件
-![[Pasted image 20230930164048.png]]
+![pub.png](https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week1/week1_asset/ros_result1.png)
 
 `Subscriber`文件
-![[Pasted image 20230930164110.png]]
+![sub.png](https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week1/week1_asset/ros_result2.png)
 
 合起来
-![[3ad22a90e418a2fbf2a8622c3f5909a.png]]
+![again.png](https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week1/week1_asset/ros_result3.png)
 
 不足之处：
 出现第一条消息漏接情况
