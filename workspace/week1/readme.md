@@ -46,12 +46,12 @@ class Solution {
 
 ## 1.2编译过程和结果
 先粗糙的利用`cmake .`生成`makefile`，再利用`make`编译得到可执行文件`rrl`
-![[3e457af958e87b6d174b277d3fe6406.png]]
+![compile.png]()
 `rrl`是`reserved-linked-list`的缩写
 之后发现好像`reversed`才对，但是已经编译了哈哈哈
 
 运行结果如下
-![[6893286d08894df975969f12f38f644.png]]
+
 
 # 2.练习使用linux shell
 ## 2.1脚本思路

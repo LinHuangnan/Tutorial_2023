@@ -4,22 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "925120a277fcf1f0",
+        "id": "7c16b184ec9d0946",
         "type": "tabs",
         "children": [
           {
-            "id": "dbb894dbdb756131",
+            "id": "64503d41faaa889d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "doc/基于git和GitHub完成考核任务.md",
+                "file": "tasks/week1（基础考核）/readme.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "286bb174fa3ef4db",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "workspace/week1/readme.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "doc/基于git和GitHub完成考核任务.md",
+                "file": "workspace/week1/readme.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "doc/基于git和GitHub完成考核任务.md",
+                "file": "workspace/week1/readme.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "doc/基于git和GitHub完成考核任务.md"
+                "file": "workspace/week1/readme.md"
               }
             }
           }
@@ -146,14 +159,23 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "dbb894dbdb756131",
+  "active": "286bb174fa3ef4db",
   "lastOpenFiles": [
     "tasks/week1（基础考核）/readme.md",
-    "tasks/readme.md",
+    "workspace/week1/week1_asset/stu5.png",
+    "workspace/week1/week1_asset/stu4.png",
+    "workspace/week1/week1_asset/stu3.png",
+    "workspace/week1/week1_asset/stu2.png",
+    "workspace/week1/week1_asset/stu1.png",
+    "workspace/week1/week1_asset/script2.1.result.png",
+    "workspace/week1/week1_asset/result2.1.1.png",
+    "workspace/week1/week1_asset/rrl_result.png",
+    "workspace/week1/week1_asset/roscore.png",
+    "workspace/week1/week1_asset/script2.1.png",
     "workspace/week1/readme.md",
+    "doc/基于git和GitHub完成考核任务.md",
+    "tasks/readme.md",
     "workspace/readme.md",
-    "workspace/week1/week1_asset/6893286d08894df975969f12f38f644.png",
-    "workspace/week1/week1_asset/3e457af958e87b6d174b277d3fe6406.png",
     "workspace/week1/week1_code/reversed-linked-list/rrl",
     "workspace/week1/week1_code/reversed-linked-list/reserved-linked-list.cpp",
     "workspace/week1/week1_code/reversed-linked-list/Makefile",
@@ -164,15 +186,6 @@
     "workspace/week1/week1_code/reversed-linked-list/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp",
     "workspace/week1/week1_code/reversed-linked-list/CMakeFiles/3.10.2/CompilerIdCXX/a.out",
     "workspace/week1/week1_code/reversed-linked-list/CMakeFiles/3.10.2/CompilerIdC/tmp",
-    "3e457af958e87b6d174b277d3fe6406.png",
-    "workspace/week1/week1_asset/7434fd9afaacec5b65ea6d54e90cb99.png",
-    "workspace/week1/week1_asset/413d35f30588c73ff93886e24917b46.png",
-    "workspace/week1/week1_asset/26c8b06197a04995f412f9bc5050ce0.png",
-    "workspace/week1/week1_asset/3ad22a90e418a2fbf2a8622c3f5909a.png",
-    "workspace/week1/week1_asset/e90424005e166e05409c91d7adeecd7.png",
-    "workspace/week1/week1_asset/0640411e2410410a124ed8ff60141f0.png",
-    "workspace/week1/week1_asset/Pasted image 20230926190440.png",
-    "doc/基于git和GitHub完成考核任务.md",
     "readme.md",
     "doc/飞控：基于Ros完成考核.md",
     "doc/补充知识二.md",
