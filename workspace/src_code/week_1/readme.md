@@ -33,3 +33,13 @@
 + 脚本编辑好后要用```chmod +x xxx.sh```命令来使脚本具有执行权限
 + 运行结果如图
 ![Alt text](./../../image/week_1/image_2_3.png)
+
+#### 任务三
++ 按照教程创建工作空间和设置环境变量，然后创建功能包，结果如下
+![Alt text](./../../image/week_1/image_3_1.png)
++ 在src中编写```pub.cpp```文件作为发布节点源码，编写```sub.cpp```文件作为订阅节点源码
++ 按照教程修改```CMakeLists.txt```文件来编译源码，同时修改```package.xml```文件
++ 最终运行结果如图
+  ![Alt text](./../../image/week_1/image_3_2.png)
+
+#### 所有任务完成
