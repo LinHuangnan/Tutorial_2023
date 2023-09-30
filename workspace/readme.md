@@ -1,6 +1,5 @@
 # 考核工作区
-----
-Author：@LiangBeiming
+Author：@LiangBeiming（梁倍铭）
 ## 提交记录
 
 |  日期  |   版本|    更新内容               |
