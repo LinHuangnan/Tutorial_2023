@@ -1,0 +1,208 @@
+{
+  "main": {
+    "id": "fb1e01816611ae69",
+    "type": "split",
+    "children": [
+      {
+        "id": "7c16b184ec9d0946",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "64503d41faaa889d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "tasks/week1（基础考核）/readme.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "286bb174fa3ef4db",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "workspace/week1/readme.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "58e3164d72e0020c",
+    "type": "split",
+    "children": [
+      {
+        "id": "bccda2830c0cbb43",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "258cdc50d7c2fc69",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "f62bd615cf262bcf",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "6b44d4e6e9ae4675",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "0a7370f7b08c8c05",
+    "type": "split",
+    "children": [
+      {
+        "id": "04f9ab278494bea1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "24332c79f0c47b28",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "workspace/week1/readme.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "5645b45478e81769",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "workspace/week1/readme.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "abecb61fc527884e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "e4852f5e0dabe4c4",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "workspace/week1/readme.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "286bb174fa3ef4db",
+  "lastOpenFiles": [
+    "tasks/week1（基础考核）/readme.md",
+    "workspace/week1/week1_asset/stu5.png",
+    "workspace/week1/week1_asset/stu4.png",
+    "workspace/week1/week1_asset/stu3.png",
+    "workspace/week1/week1_asset/stu2.png",
+    "workspace/week1/week1_asset/stu1.png",
+    "workspace/week1/week1_asset/script2.1.result.png",
+    "workspace/week1/week1_asset/result2.1.1.png",
+    "workspace/week1/week1_asset/rrl_result.png",
+    "workspace/week1/week1_asset/roscore.png",
+    "workspace/week1/week1_asset/script2.1.png",
+    "workspace/week1/readme.md",
+    "doc/基于git和GitHub完成考核任务.md",
+    "tasks/readme.md",
+    "workspace/readme.md",
+    "workspace/week1/week1_code/reversed-linked-list/rrl",
+    "workspace/week1/week1_code/reversed-linked-list/reserved-linked-list.cpp",
+    "workspace/week1/week1_code/reversed-linked-list/Makefile",
+    "workspace/week1/week1_code/reversed-linked-list/CMakeLists.txt",
+    "workspace/week1/week1_code/reversed-linked-list/CMakeCache.txt",
+    "workspace/week1/week1_code/reversed-linked-list/cmake_install.cmake",
+    "workspace/week1/week1_code/reversed-linked-list/CMakeFiles/3.10.2/CompilerIdCXX/tmp",
+    "workspace/week1/week1_code/reversed-linked-list/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp",
+    "workspace/week1/week1_code/reversed-linked-list/CMakeFiles/3.10.2/CompilerIdCXX/a.out",
+    "workspace/week1/week1_code/reversed-linked-list/CMakeFiles/3.10.2/CompilerIdC/tmp",
+    "readme.md",
+    "doc/飞控：基于Ros完成考核.md",
+    "doc/补充知识二.md",
+    "doc/补充知识一.md",
+    "doc/补充知识五.md",
+    "doc/补充知识四.md",
+    "doc/补充知识三.md",
+    "tasks/week2-4 视觉组/视觉组第4周考核任务/readme.md",
+    "doc/readme.md",
+    "doc/Matlab相关学习.md",
+    "tasks/week2-4 飞控组/readme.md",
+    "tasks/week2-4 机械组/机械组第1周考核任务/readme.md",
+    "doc/环境配置与准备.md",
+    "doc/机械：基于Solidworks完成考核.md",
+    "doc/基于STM32完成考核.md",
+    "doc/考核须知.md",
+    "doc/视觉：基于OpenCV完成考核.md",
+    "doc/团队协同的规范.md"
+  ]
+}
