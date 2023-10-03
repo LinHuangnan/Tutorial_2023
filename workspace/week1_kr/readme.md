@@ -42,9 +42,16 @@ Author：@Kr
 
 ## 3. ROS通信机制
 
-* 已安装ROS 
+* **已安装ROS**
 
   [这是roscore结果](./image/task_3.png)
 
-* 后续内容暂时未完成。
+* **设计项目** ：将话题输出频率调整为100，做出一个秒表
+* **创建工作空间与功能包**
+* **创建package**：[package创建截图](./image/task_3(2).png)
+* **定义话题消息msg**：[msg截图](./image/task_3(3).png)
+* **在package.xml中添加功能包依赖，在CMakeLists.txt添加编译选项，编译生成语言相关文件**
+* **创建** [Publisher](/image/task3(4).png) ,[Subscriber](/image/task3(5).png)
+* **配置CMakeList.txt中的编译规则** [截图](./image/task3(6).png)
+* **运行roscore，启动[Time_publisher](./image/task3(7).png)和[Time_subscriber](./image/task3(8).png)** 
 
