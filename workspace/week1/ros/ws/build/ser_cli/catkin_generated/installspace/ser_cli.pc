@@ -1,0 +1,8 @@
+prefix=/home/tongfakun/tutorial_2023/Tutorial_2023/workspace/week1/ros/ws/install
+
+Name: ser_cli
+Description: Description of ser_cli
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: roscpp rospy std_msgs message_runtime
