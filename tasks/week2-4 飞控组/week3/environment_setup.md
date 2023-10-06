@@ -1,79 +1,36 @@
-# Motion Planning for UAV in ROS Environment
+### Environment Setup
 
+#### 1.推荐系统
 
+` Ubuntu 16.04`
 
-## hw\_1 Part
+`ROS Kinetic`
 
-### Ros_work
+**Tips**
 
-1.  系统要求：
+其它的版本的Ubuntu和ROS我也没有进行过测试，可能编译可能会碰到问题，需要自己尝试解决
 
-    1.  Ubuntu 16.04
-
-    2.  ROS Kinetic
-
-2.  下载课程包 hw\_1，并解压
-
-3.  创建工作空间
+#### 2.创建工作空间
 
 >   Ctrl+alt+t，打开终端，复制并逐条运行以下命令
 
-mkdir -p \~/catkin\_ws/src
-
-| cd \~/catkin\_ws/src |
-|----------------------|
-
-
->   之后将 hw\_1/src 中的三个文件夹复制到/catkin\_ws/src 路径下
-
-继续在终端执行命令
-
-catkin\_init\_workspace
-
-| cd \~/catkin\_ws/ |
-|-------------------|
-
-
-catkin\_make source devel/setup.bash
-
-4.  打开 rviz
-
->   在终端执行命令
-
-roscore
-
->   ctrl+shift+t，打开新一页终端，执行以下命令
-
-rviz
-
-显示出 rviz 初始页面
-
-![image1](./image/image1.jpg)
-
-5.  打开 rviz 配置文件
-
-鼠标放在左上方，点击添加配置文件(open Config)，配置文件路径为
-
-\~/catkin\_ws/src/grid\_path\_searcher/launch/rviz\_config/demo.rviz
-
-打开之后显示如下画面，此时因为还未运行程序，所以地图没有初始化，看不到点云三维地图。
-
-![image2](./image/image2.jpg)
-
-6.  部署 rviz插件（这一步由于配置文件已经被我更新保存，所以不用执行）点击“+”号，添加 Goal3DTool 插件
-
-![image3](./image/image3.jpg)
-
->   并点击“-”号，去掉 2D Nav Goal 和 2D Pose Estimate
-
-7.  运行程序，载入地图 ctrl+shift+t，打开新一页终端，执行以下命令
-
-```java
-source devel/setup.bash
-roslaunch grid\_path\_searcher demo.launch
+```shell
+mkdir -p catkin_ws/src
+cd catkin_ws/src
 ```
 
->   画面切到 rivz，可以看到，程序自动载入了点云地图
+>   之后将我们提供的ros_workspace/src 中的三个文件夹复制到catkin_ws/src路径下
+
+#### 3.编译代码
+
+```shell
+cd catkin_ws/
+catkin_make
+```
+
+#### 4.运行
+
+
 
 ![image4](./image/image4.jpg)
 
