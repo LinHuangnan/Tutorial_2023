@@ -7,6 +7,7 @@
 #include <ros/ros.h>
 #include <random>
 #include <iomanip>
+
 using namespace std;
 
 int main(int argc, char** argv) {
@@ -15,6 +16,11 @@ int main(int argc, char** argv) {
 	little_car car;//初始化控制对象  小车
     car.joint_pub = n.advertise<sensor_msgs::JointState>("joint_states", 1);
 	car.pos_pub = n.advertise<geometry_msgs::Point>("car_position",1); //小车的位置消息发布
+	void carTurnCallback(const little_car::littlecar::ConstPtr& msg){
+		car.set_yaw(msg->get_yaw());
+	}
+	ros::Subscriber car_turn_sub = n.subscribe("/car_turn", 20, carTurnCallback);
+	ros::spin();
 	/* 
 	 *请添加一个Subscriber，从你自己编写的Publisher处订阅指令
 	 */
