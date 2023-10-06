@@ -58,6 +58,10 @@ $ roslaunch grid_path_search demo.launch
 ### **环境配置**
 环境配置详情请见 [环境配置](./environment_setup.md)
 
+### **代码解读**
+
+这里对一些重要的代码做出简单说明 [代码解读](./code_explanation.md)
+
 ### **Tips:**
 
 1. 本次任务用到的Jump Point Search(JPS)算法和A*搜索算法是无人机路径规划(planning)的经典算法。
