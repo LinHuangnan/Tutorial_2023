@@ -66,8 +66,17 @@ int main(int argc, char** argv) {
     while (ros::ok()) {
 	//	yaw += 0.01;
 		car.set_yaw(yaw); 		   //修改小车的方向
-		velocity.x = -v * sin(yaw);
-		velocity.y = v * cos(yaw);
+		if(-v * sin(yaw) < 0.08) 		   //修改小车的方向
+			velocity.x = -v * sin(yaw);
+		else
+			velocity.x = 0.08
+		if (v * cos(yaw) < 0.08/* condition */)
+		{
+			/* code */
+			velocity.y = v * cos(yaw);			
+		}
+		else
+			velocity.y = 0.08;
 		car.set_velocity(velocity);//设置小车速度
         car.update_();//小车状态更新
 		loop_rate.sleep();
