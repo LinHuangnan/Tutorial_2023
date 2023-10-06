@@ -13,26 +13,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "tasks/week1（基础考核）/readme.md",
+                "file": "tasks/week2-4 飞控组/week2/task2_description.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "286bb174fa3ef4db",
+            "id": "7da8980c154410c8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "workspace/week1/readme.md",
+                "file": "tasks/week2-4 飞控组/week2/task2_description.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "961f186868759830",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "workspace/week2/readme.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "workspace/week1/readme.md",
+                "file": "workspace/week2/readme.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "workspace/week1/readme.md",
+                "file": "workspace/week2/readme.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "workspace/week1/readme.md"
+                "file": "workspace/week2/readme.md"
               }
             }
           }
@@ -159,50 +171,52 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "286bb174fa3ef4db",
+  "active": "961f186868759830",
   "lastOpenFiles": [
+    "workspace/week2/week2_asset/launch文件例子.png",
+    "tasks/week2-4 飞控组/week2/readme.md",
+    "tasks/week2-4 飞控组/readme.md",
     "tasks/week1（基础考核）/readme.md",
+    "tasks/week2-4 视觉组/视觉组第3周考核任务/readme.md",
+    "workspace/week2/week2_asset/目前进度1.png",
+    "workspace/week2/readme.md",
+    "workspace/readme.md",
+    "workspace/week2/week2_code/ros_project/src/pub_cmd/src/publisher.cpp",
+    "workspace/week2/week2_code/ros_project/src/pub_cmd/include/pub_cmd",
+    "workspace/week2/week2_code/ros_project/src/pub_cmd/src",
+    "workspace/week2/week2_code/ros_project/src/pub_cmd/package.xml",
+    "workspace/week2/week2_code/ros_project/src/pub_cmd/include",
+    "workspace/week2/week2_code/ros_project/src/pub_cmd/CMakeLists.txt",
+    "workspace/week2/week2_code/ros_project/src/pub_cmd",
+    "workspace/week2/week2_code/ros_project/devel/share/pub_cmd/cmake/pub_cmdConfig.cmake",
+    "workspace/week2/week2_code/ros_project/devel/share/pub_cmd/cmake/pub_cmdConfig-version.cmake",
+    "workspace/week2/week2_code/ros_project/devel/share/little_car/cmake/little_carConfig.cmake",
+    "tasks/week2-4 飞控组/week2/task2_description.md",
+    "workspace/week2/week2_asset/小车模型.png",
+    "workspace/week2/week2_asset/服务通信总结.md",
+    "workspace/week2/week2_asset/服务通信运行截图.png",
+    "doc/基于STM32完成考核.md",
+    "doc/补充知识一.md",
+    "doc/补充知识二.md",
+    "doc/补充知识三.md",
+    "doc/补充知识五.md",
+    "doc/补充知识四.md",
+    "doc/readme.md",
+    "doc/环境配置与准备.md",
+    "doc/飞控：基于Ros完成考核.md",
+    "tasks/week2-4 机械组/机械组第1周考核任务/readme.md",
+    "tasks/week2-4 机械组/机械组第3周考核任务/readme.md",
+    "tasks/week2-4 机械组/solidworks使用技巧.md",
+    "tasks/week2-4 机械组/机械组第2周考核任务/readme.md",
+    "readme.md",
+    "workspace/week1/readme.md",
+    "tasks/week2-4 视觉组/视觉组第4周考核任务/readme.md",
+    "tasks/week2-4 视觉组/readme.md",
     "workspace/week1/week1_asset/stu5.png",
     "workspace/week1/week1_asset/stu4.png",
     "workspace/week1/week1_asset/stu3.png",
     "workspace/week1/week1_asset/stu2.png",
     "workspace/week1/week1_asset/stu1.png",
-    "workspace/week1/week1_asset/script2.1.result.png",
-    "workspace/week1/week1_asset/result2.1.1.png",
-    "workspace/week1/week1_asset/rrl_result.png",
-    "workspace/week1/week1_asset/roscore.png",
-    "workspace/week1/week1_asset/script2.1.png",
-    "workspace/week1/readme.md",
-    "doc/基于git和GitHub完成考核任务.md",
-    "tasks/readme.md",
-    "workspace/readme.md",
-    "workspace/week1/week1_code/reversed-linked-list/rrl",
-    "workspace/week1/week1_code/reversed-linked-list/reserved-linked-list.cpp",
-    "workspace/week1/week1_code/reversed-linked-list/Makefile",
-    "workspace/week1/week1_code/reversed-linked-list/CMakeLists.txt",
-    "workspace/week1/week1_code/reversed-linked-list/CMakeCache.txt",
-    "workspace/week1/week1_code/reversed-linked-list/cmake_install.cmake",
-    "workspace/week1/week1_code/reversed-linked-list/CMakeFiles/3.10.2/CompilerIdCXX/tmp",
-    "workspace/week1/week1_code/reversed-linked-list/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp",
-    "workspace/week1/week1_code/reversed-linked-list/CMakeFiles/3.10.2/CompilerIdCXX/a.out",
-    "workspace/week1/week1_code/reversed-linked-list/CMakeFiles/3.10.2/CompilerIdC/tmp",
-    "readme.md",
-    "doc/飞控：基于Ros完成考核.md",
-    "doc/补充知识二.md",
-    "doc/补充知识一.md",
-    "doc/补充知识五.md",
-    "doc/补充知识四.md",
-    "doc/补充知识三.md",
-    "tasks/week2-4 视觉组/视觉组第4周考核任务/readme.md",
-    "doc/readme.md",
-    "doc/Matlab相关学习.md",
-    "tasks/week2-4 飞控组/readme.md",
-    "tasks/week2-4 机械组/机械组第1周考核任务/readme.md",
-    "doc/环境配置与准备.md",
-    "doc/机械：基于Solidworks完成考核.md",
-    "doc/基于STM32完成考核.md",
-    "doc/考核须知.md",
-    "doc/视觉：基于OpenCV完成考核.md",
-    "doc/团队协同的规范.md"
+    "workspace/week1/week1_asset/script2.1.result.png"
   ]
 }
