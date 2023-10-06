@@ -26,9 +26,13 @@ Revice：@LinHuangnan
 
 ##### Tips（**A*搜索算法实现流程**）
 完成 src/grid_path_searcheer/src/Astar_searcher.cpp 下的,请仔细阅读代码注释，按照STEP1-STEP8的提示逐步完成。
+
 `void AstarPathFinder::AstarGetSucc(...);`
+
 `double AstarPathFinder::getHeu(...);`
+
 `void AstarPathFinder::AstarGraphSearch(...);`
+
 `vector<Vector3d> AstarPathFinder::getPath(...);`
 
 ### **评分标准**：
@@ -51,7 +55,8 @@ $ catkin_make
 $ source devel/setup.bash
 $ roslaunch grid_path_search demo.launch
 ```
-
+### **环境配置**
+环境配置详情请见 [环境配置](./environment_setup.md)
 
 ### **Tips:**
 
