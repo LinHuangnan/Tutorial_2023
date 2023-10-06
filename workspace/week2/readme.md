@@ -1,18 +1,18 @@
 # 完成的部分
 ## 1.服务通信任务
-进行了服务通信的学习记录，总结了编写流程，参见[[服务通信总结]]
+进行了服务通信的学习记录，总结了编写流程，参见`week2/week2_code/服务通信总结`
 
 并成功编写了`Client.cpp`和`Server.cpp`源文件，见`week2_code/service_pkg/src`
 
 以下是运行结果截图
-![[服务通信运行截图.png]]
+[服务通信运行截图.png](https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week2/week2_asset/%E6%9C%8D%E5%8A%A1%E9%80%9A%E4%BF%A1%E8%BF%90%E8%A1%8C%E6%88%AA%E5%9B%BE.png)
 
 ## 2.使用launch来启动节点
 编写了一个小海龟启动节点来运行，参见`week2_code/service_pkg/launch`
-![[launch文件例子.png]]
+[launch文件例子.png](https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week2/week2_asset/launch%E6%96%87%E4%BB%B6%E4%BE%8B%E5%AD%90.png)
 ## 3.补全了小车的urdf模型
 参见`week2_code/ros_project/little_car/urdf`
-![[小车模型.png]]
+[小车模型.png](https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week2/week2_asset/%E5%B0%8F%E8%BD%A6%E6%A8%A1%E5%9E%8B.png)
 
 
 # 未完成的部分与目前进度
@@ -22,7 +22,7 @@
 能够实现publisher和subscriber的通信，但是在odom下显示为白色模型，在base_link下看不出来
 代码见`/week2_code/ros_project/little_car/src/`
 
-![[目前进度1.png]]
+[目前进度1.png](https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week2/week2_asset/%E7%9B%AE%E5%89%8D%E8%BF%9B%E5%BA%A61.png)
 
 而且虽然发现可以改变yaw值使小车转动，但是在odom下观察，改变S3vector类型的velocity的值是改变绝对坐标系的，不是改变相对于小车自己坐标系的
 于是出现一边平移一边旋转的情况
