@@ -1,10 +1,11 @@
-Part 1 代码执行流程
+### 代码解读
 
-见文件：src/grid\_path\_searcheer/src/demo\_node.cpp 
+#### 代码运行流程
+**见文件：src/grid\_path\_searcheer/src/demo\_node.cpp** 
 
 **主函数 main** 
 
-```java
+```cpp
 int main(int argc, char** argv)
 {
     ......
@@ -24,7 +25,7 @@ int main(int argc, char** argv)
 
 **回调函数 rcvPointCloudCallBack**
 
-```java
+```cpp
 void rcvPointCloudCallBack(const sensor_msgs::PointCloud2 & pointcloud_map)
 {
     ......
@@ -42,7 +43,7 @@ void rcvPointCloudCallBack(const sensor_msgs::PointCloud2 & pointcloud_map)
 
 **回调函数 rcvWaypointsCallback**
 
-```java
+```cpp
 void rcvWaypointsCallback(const nav_msgs::Path & wp)
 {
     // 获取交互式界面给出的终点坐标
@@ -59,7 +60,7 @@ void rcvWaypointsCallback(const nav_msgs::Path & wp)
 
 **路径规划函数 pathFinding**
 
-```java
+```cpp
 void pathFinding(const Vector3d start_pt, const Vector3d target_pt)
 {
     // 使用A*进行路径搜索
@@ -88,12 +89,12 @@ void pathFinding(const Vector3d start_pt, const Vector3d target_pt)
 }
 ```
 
-Part2 涉及类和结构体的简介
+#### 涉及类和结构体的简介
 
 **节点表⽰：⽤结构体变量 GridNode
 表⽰，存储了节点的坐标、g(n)、f(n)值、⽗节点指针等信息。**
 
-```java
+```cpp
 struct GridNode
 {     
     int id;        // 1--> open set, -1 --> closed set
@@ -123,7 +124,7 @@ struct GridNode
 
 **父类AstarPathFinder**
 
-```java
+```cpp
 class AstarPathFinder
 {
     private:
@@ -148,10 +149,9 @@ class AstarPathFinder
 
 **open set实现：⽤C++ STL中的multimap实现，multimap将{key,value}当做元素，允许重复元素。multimap根据key的排序准则⾃动将元素排序，因此使⽤时只需考虑插⼊和删除操作即可。**
 
-**详细信息可以查看以下⽂档：ttps://zh.cppreference.com/w/cpp/container/multimap
 继承类JPSPathFinder**
 
-```java
+```cpp
 class JPSPathFinder: public AstarPathFinder
 {
     ......
@@ -163,152 +163,3 @@ class JPSPathFinder: public AstarPathFinder
 }
 ```
 
-Part 3 任务详情 
-
-完成 src/grid\_path\_searcheer/src/Astar\_searcher.cpp 下的
-
-```java
-void AstarPathFinder::AstarGetSucc(...);
-double AstarPathFinder::getHeu(...);
-void AstarPathFinder::AstarGraphSearch(...);
-vector<Vector3d> AstarPathFinder::getPath(...);
-```
-
-请仔细阅读代码中的注释，按照STEP 1 – STEP 8 的提示逐步完成。
-
-Part 4 作业提交要求
-
-(1)提交完整可编译运行的程序功能包grid\_path\_searcher
-
-(2)撰写一篇**不超过2页A4纸**的文档，需要包含以下内容
-
-(3)算法流程、运行结果
-
-(4)对比不同启发式函数（Manhattan、Euclidean、Diagonal、Heuristic）对A\*运行效率的影响
-
-(5)对比是否加入Tie Breaker对A\*运行效率的影响
-
-(6)任何完成算法过程中遇到的问题、以及解决方法
-
-(7)（选做）如果完成了JPS，最好附上A\*和JPS算法效率的分析（何种情况下A\*更优、何种情况下JPS更优？）
-
-(8)（选做）以及其他你认为有趣的内容。 Part 5 拓展练习（选做）
-
-在完成任务（1）的基础上，仿照**void**
-AstarPathFinder::AstarGraphSearch(...)的写法，补全
-
-**src/grid\_path\_searcheer/src/readonly/JPS\_searcher.cpp**下的 **void**
-JPSPathFinder::JPSGraphSearch(...)，由于JPS和Astar仅在扩展节点时有区别，所以只需要仔细对照，并结合已经写好的**void**
-JPSPathFinder::JPSGetSucc (...)；完成JPS难度不大。
-
-## hw\_3 Part
-
-### Matlab_work
-
-![image5](./image/image5.jpg)
-
-打开工作文件夹，按照STEP提示完成RRT.m
-
-### Ros_work
-
-1.  准备工作
-
-1.1 登录 ompl（The Open Motion Planning Library）官网：
-
-[https://ompl.kavrakilab.org/index.html](https://ompl.kavrakilab.org/index.html)
-
-1.2 进入 Download 页面，下载保存脚本文件 install-ompl-ubuntu.sh
-
-![image6](./image/image6.jpg)
-
-1.3 运行脚本文件在脚本文件保存的路径下，右键打开终端，运行命令
-
-```java
-sudo chmod +x install-ompl-ubuntu.sh
-./install-ompl-ubuntu.sh
-```
-
-1.4 创建工作空间，编译作业里的功能包（**首次编译无法通过，需要完善代码才能编译通过**）
-
-2.  ROS 查找依赖包 ompl
-
-2.1 修改 src/grid\_path\_searcher/CMakeLists.txt，使⽤find\_package()查找 ompl 的头⽂件、库路径等信息
-
-```java
-find_package(Eigen3 REQUIRED)
-find_package(PCL REQUIRED)
-# add your code here: find_package(xxx REQUIRED)
-```
-
-3.  在代码中添加使⽤到的 ompl 的头⽂件（该部分代码中已经添加）
-
-⻅⽂件 src/grid\_path\_search/src/demo\_node.cpp
-
-```java
-#include <ompl/config.h>
-#include <ompl/base/StateSpace.h>
-#include <ompl/base/Path.h>
-#include <ompl/base/spaces/RealVectorBounds.h>
-#include <ompl/base/spaces/RealVectorStateSpace.h>
-#include <ompl/base/StateValidityChecker.h>
-#include <ompl/base/OptimizationObjective.h>
-#include <ompl/base/objectives/PathLengthOptimizationObjective.h>
-#include <ompl/geometric/planners/rrt/RRTstar.h>
-#include <ompl/geometric/SimpleSetup.h>
-```
-
-4.  学习调⽤opml 实现 RRT\* 要学会调⽤ompl 实现 RRT\*，需要实现的功能如下：
-
-    -   把⽤户定义的起点、终点、地图⽤ompl 库定义的数据结构表⽰
-
-    -   了解 ompl 调⽤RRT\*的⽅法和步骤
-
-    -   把 ompl 库求解得到的路径转换为⽤户定义的数据结构
-
-本次作业需要添加的代码集中在⽂件 src/grid\_path\_searcher.cpp/src/demo\_node.cpp
-中的⼀个函数 void pathFinding(const Vector3d start\_pt, const Vector3d
-target\_pt)和⼀个类 class ValidityChecker : public ob::StateValidityChecker。
-
-其中，pathFinding()交代了完整的代码流程，需要重点关注。
-
-需要添加的代码在⽂件中以注释的形式标出，共有７处。 
-
-e.g.
-
-```java
-// Our collision checker. For this demo, our robot's state space
-class ValidityChecker : public ob::StateValidityChecker
-{
-public:
-    ValidityChecker(const ob::SpaceInformationPtr& si) :
-        ob::StateValidityChecker(si) {}
-    // Returns whether the given state's position overlaps the
-    // circular obstacle
-    bool isValid(const ob::State* state) const
-    {   
-        // We know we're working with a RealVectorStateSpace in this
-        // example, so we downcast state into the specific type.
-        const ob::RealVectorStateSpace::StateType* state3D =
-            state->as<ob::RealVectorStateSpace::StateType>();
-        /**
-        *
-        *
-        STEP 1: Extract the robot's (x,y,z) position from its state
-        *
-        *
-        */
-
-        return _RRTstar_preparatory->isObsFree(x, y, z);
-    }
-};
-```
-
-## hw\_4 Part
-
-Local Lattice Planner:
-
-(1)	Build an ego-graph of the linear modeled robot
-
-(2)	Select the best trajectory closest to the planning target
-
-The modelling and how to select the best trajectory by using OBVP have been given here, please follow the annotation in the code, finish the homework step by step. Enjoy it~
