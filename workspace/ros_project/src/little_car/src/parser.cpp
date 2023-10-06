@@ -84,3 +84,4 @@ void little_car::set_yaw(float yaw)
 	_yaw = yaw;
 	return;
 }
+
