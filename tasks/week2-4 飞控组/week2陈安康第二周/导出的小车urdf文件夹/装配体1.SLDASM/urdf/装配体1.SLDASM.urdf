@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="装配体1.SLDASM">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.0517803475487482 0.0145762377834093 0.0364442833495505"
+        rpy="0 0 0" />
+      <mass
+        value="0.168433577741048" />
+      <inertia
+        ixx="5.1894392144424E-05"
+        ixy="-2.30669263615489E-21"
+        ixz="1.48048205054515E-20"
+        iyy="0.00019743717510779"
+        iyz="4.45258112332264E-37"
+        izz="0.000170807819624523" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体1.SLDASM/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体1.SLDASM/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="wheel1">
+    <inertial>
+      <origin
+        xyz="-1.0842E-18 -5.421E-20 0.005"
+        rpy="0 0 0" />
+      <mass
+        value="0.012566" />
+      <inertia
+        ixx="1.3614E-06"
+        ixy="7.0096E-54"
+        ixz="-1.7647E-23"
+        iyy="1.3614E-06"
+        iyz="-2.4284E-39"
+        izz="2.5133E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体1.SLDASM/meshes/wheel1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体1.SLDASM/meshes/wheel1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1"
+    type="continuous">
+    <origin
+      xyz="-0.0012978 -0.062889 -0.00042376"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel1" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="wheel2">
+    <inertial>
+      <origin
+        xyz="-1.0842E-18 -1.0842E-19 0.005"
+        rpy="0 0 0" />
+      <mass
+        value="0.012566" />
+      <inertia
+        ixx="1.3614E-06"
+        ixy="0"
+        ixz="2.2959E-39"
+        iyy="1.3614E-06"
+        iyz="-2.4284E-39"
+        izz="2.5133E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体1.SLDASM/meshes/wheel2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体1.SLDASM/meshes/wheel2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint2"
+    type="continuous">
+    <origin
+      xyz="-0.0012978 0 -0.00042376"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel2" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="wheel3">
+    <inertial>
+      <origin
+        xyz="0 0 0.005"
+        rpy="0 0 0" />
+      <mass
+        value="0.012566" />
+      <inertia
+        ixx="1.3614E-06"
+        ixy="7.0096E-54"
+        ixz="-1.7647E-23"
+        iyy="1.3614E-06"
+        iyz="-2.4284E-39"
+        izz="2.5133E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体1.SLDASM/meshes/wheel3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体1.SLDASM/meshes/wheel3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint3"
+    type="continuous">
+    <origin
+      xyz="0.10486 -0.062889 -0.00042376"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel3" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="wheel4">
+    <inertial>
+      <origin
+        xyz="-1.3878E-17 -5.421E-20 0.005"
+        rpy="0 0 0" />
+      <mass
+        value="0.012566" />
+      <inertia
+        ixx="1.3614E-06"
+        ixy="0"
+        ixz="2.2959E-39"
+        iyy="1.3614E-06"
+        iyz="-2.4284E-39"
+        izz="2.5133E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体1.SLDASM/meshes/wheel4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体1.SLDASM/meshes/wheel4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint4"
+    type="continuous">
+    <origin
+      xyz="0.10486 0 -0.00042376"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel4" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+</robot>
