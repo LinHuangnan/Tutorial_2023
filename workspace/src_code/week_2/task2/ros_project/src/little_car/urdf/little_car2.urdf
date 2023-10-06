@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<robot name = "little_car">
+	<link name = "base_link">
+	<!-- 在此处搭一个小车模型，
+			重心离地0.05,
+			视图为一个0.3×0.2×0.1的蓝色长方体，
+			碰撞箱为0.21×0.3×0.11
+			质量为10 -->
+	<visual>
+		<geometry>
+			<box size="0.3 0.2 0.1"/>
+		</geometry>
+		<material name="blue">
+			<color rgba="0 0 1 1"/>
+		</material>
+	</visual>		
+	</link>
+
+</robot>
