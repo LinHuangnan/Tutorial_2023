@@ -44,7 +44,14 @@ void handle(){
 	 ros::spin();
 
 }	 
-
+//PID
+float PID(float &vy, float &vx){
+	float = 0.01;//时间是0.01s
+	float kp=1,ki=1,kz=1;
+	v1 = *vx;
+	v2 = *vy;
+	diff1 = 
+}
 int main(int argc, char** argv) {
     ros::init(argc, argv, "state_publisher");
     ros::NodeHandle n;
@@ -66,17 +73,25 @@ int main(int argc, char** argv) {
     while (ros::ok()) {
 	//	yaw += 0.01;
 		car.set_yaw(yaw); 		   //修改小车的方向
-		if(-v * sin(yaw) < 0.08) 		   //修改小车的方向
-			velocity.x = -v * sin(yaw);
-		else
-			velocity.x = 0.08
-		if (v * cos(yaw) < 0.08/* condition */)
-		{
-			/* code */
-			velocity.y = v * cos(yaw);			
+		if(-v * sin(yaw) < 0.08&& -v * sin(yaw) > -0.08){
+		velocity.x = -v * sin(yaw);
 		}
-		else
-			velocity.y = 0.08;
+		else if(-v * sin(yaw) > 0){ 
+		velocity.x = 0.08 ;
+		}
+		else{
+		velocity.x = -0.08 ;
+		}
+		if(v * cos(yaw) < 0.08&& v * cos(yaw) > -0.08){
+		velocity.y  = v * cos(yaw);
+		}
+		else if(v * cos(yaw) > 0){ 
+		velocity.y  = 0.08 ;
+		}
+		else{
+		velocity.y  = -0.08 ;
+		}
+		//velocity.y = v * cos(yaw);
 		car.set_velocity(velocity);//设置小车速度
         car.update_();//小车状态更新
 		loop_rate.sleep();
