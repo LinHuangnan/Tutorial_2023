@@ -1,0 +1,4 @@
+<launch>
+	<node pkg="srv_and_cli" type="service_node" name="service_1" output="screen"/>
+	<node pkg="srv_and_cli" type="client_node" name="client_1" output="screen"/>
+</launch>
