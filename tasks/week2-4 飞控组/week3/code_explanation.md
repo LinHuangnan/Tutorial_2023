@@ -91,8 +91,7 @@ void pathFinding(const Vector3d start_pt, const Vector3d target_pt)
 
 #### 涉及类和结构体的简介
 
-**节点表⽰：⽤结构体变量 GridNode
-表⽰，存储了节点的坐标、g(n)、f(n)值、⽗节点指针等信息。**
+**节点表⽰：⽤结构体变量 GridNode表⽰，存储了节点的坐标、g(n)、f(n)值、⽗节点指针等信息。**
 
 ```cpp
 struct GridNode
@@ -149,7 +148,7 @@ class AstarPathFinder
 
 **open set实现：⽤C++ STL中的multimap实现，multimap将{key,value}当做元素，允许重复元素。multimap根据key的排序准则⾃动将元素排序，因此使⽤时只需考虑插⼊和删除操作即可。**
 
-继承类JPSPathFinder**
+**继承类JPSPathFinder**
 
 ```cpp
 class JPSPathFinder: public AstarPathFinder
@@ -158,7 +157,7 @@ class JPSPathFinder: public AstarPathFinder
     // JPS 的拓展节点函数，已经完成
     void JPSGetSucc(GridNodePtr currentPtr, std::vector<GridNodePtr> & neighborPtrSets, std::vector<double> & edgeCostSets);
 
-    //JPS 搜索算法函数，主体框架和 A\*一致，只要用心对照修改，在完成了A*的基础，使用提供的函数接口完成JPS难度不打
+    //JPS 搜索算法函数，主体框架和 A\*一致，只要用心对照修改，在完成了A*的基础，使用提供的函数接口完成JPS难度不大
     void JPSGraphSearch(Eigen::Vector3d start_pt, Eigen::Vector3d end_pt);
 }
 ```
