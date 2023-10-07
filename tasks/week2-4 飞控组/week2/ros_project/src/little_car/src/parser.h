@@ -17,6 +17,7 @@ typedef struct
 class little_car
 {
 	private:
+
 		SVector3 _velocity;	 //小车速度
 		SVector3 _position;  //小车位置
 		float _yaw = 0.0;	 //小车的偏航角

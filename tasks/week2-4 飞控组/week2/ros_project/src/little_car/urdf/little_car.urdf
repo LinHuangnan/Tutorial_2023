@@ -1,65 +1,138 @@
-<?xml version="1.0" ?>
-<robot name = "little_car">
-	<link name = "base_link">
-	<!-- 在此处搭一个小车模型，
-			重心离地0.05,
-			视图为一个0.3×0.2×0.1的蓝色长方体，
-			碰撞箱为0.21×0.3×0.11
-			质量为10 -->
+<?xml version="1.0"?>
+	<robot name="little_car">
+		<link name="base_link">	
+			<inertial>
+				<origin xyz="0 0 0.05" rpy="0 0 0"/>   
+           			<mass value="10"/>                 
+            			<inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />  
+        		</inertial>
+
+			<visual>
+				<geometry>
+					<box size="0.3 0.2 0.1"/>
+				</geometry>
+				<origin xyz="0 0 0.05" rpy="0 0 0"/>
+				<material name="blue">
+					<color rgba="0 0 1 1"/>
+				</material>
+			</visual>
+			<collision>
+				<geometry>
+		  		  <box size="0.21 0.3 0.11"/>
+				</geometry>
+	    		</collision>
+		</link>
 		
-	</link>
-
-	<!-- front wheel -->
-	<link name="wheel_1" > 
+		<link name="wheel_1">	
+			<inertial>
+				<origin xyz="0 0 0.05" rpy="0 0 0"/>   
+           			<mass value="10"/>                 
+            			<inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />  
+        		</inertial>			
+			<visual>
+				<geometry>
+					<cylinder length="0.05" radius="0.05"/>
+				</geometry>
+				<origin rpy="0 1.5 0" xyz="0.1 0.1 0"/> 
+				<material name="black">
+					<color rgba="0 0 0 1"/>
+				</material>
+			</visual>
+	    		<collision>
+				<geometry>
+		    			<box size="0.21 0.3 0.11"/>
+				</geometry>
+	    		</collision>
+		</link>
 		
-		<!-- 在此处搭一个轮子，
-			视图为一个0.05长，0.05半径的圆柱体，
-			碰撞箱同上
-			质量为10 -->
+		<link name="wheel_2">
+			<inertial>
+				<origin xyz="0 0 0.05" rpy="0 0 0"/>   
+           			<mass value="10"/>                 
+            			<inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />  
+        		</inertial>
+	
+			<visual>
+				<geometry>
+					<cylinder length="0.05" radius="0.05"/>
+				</geometry>
+				<origin rpy="0 1.5 0" xyz="-0.1 0.1 0"/>
+				<material name="black">
+					<color rgba="0 0 0 1"/>
+				</material>
+			</visual>
+	    		<collision>
+				<geometry>
+		    			<box size="0.21 0.3 0.11"/>
+				</geometry>
+	    		</collision>
+		</link>
 		
-	</link>
-
-	<link name="wheel_2" >
-		<!--   同上一个轮子  -->
-	</link>
-
-
-	<link name="wheel_3" >
-		<!--   同上一个轮子  -->
-	</link>
-
-
-	<link name="wheel_4" >
-		<!--   同上一个轮子  -->
-	</link>
-
-	<joint name="base_to_wheel_1" type="continuous">
-		<!--在此处填入四个性质，下面三个轮子同理，注意分别链接在不同位置
-		<parent               >
-		<child                >
-		<axis                 >
-		<origin               >
-
-		tips:转轴定为z轴（初始圆柱体正立放置）
-			origin的xyz偏移按照上面的箱子计算得出，rpy绕y轴转90度（urdf中为弧度制）
-			-->
-		<joint_properties damping="20.0" friction="20.0"/>
-	</joint>
-
-	<joint name="base_to_wheel_2" type="continuous">
+		<link name="wheel_3">	
+			<inertial>
+				<origin xyz="0 0 0.05" rpy="0 0 0"/>   
+           			<mass value="10"/>                 
+            			<inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />  
+        		</inertial>	
+			<visual>
+				<geometry>
+					<cylinder length="0.05" radius="0.05"/>
+				</geometry>
+				<origin rpy="0 1.5 0" xyz="0.1 -0.1 0"/>
+				<material name="black">
+					<color rgba="0 0 0 1"/>
+				</material>
+			</visual>
+	    		<collision>
+				<geometry>
+		    			<box size="0.21 0.3 0.11"/>
+				</geometry>
+	    		</collision>
+		</link>
 		
-		<joint_properties damping="20.0" friction="20.0"/>
-	</joint>
-
-
-	<joint name="base_to_wheel_3" type="continuous">
+		<link name="wheel_4">
+			<inertial>
+				<origin xyz="0 0 0.05" rpy="0 0 0"/>   
+           			<mass value="10"/>                 
+            			<inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />  
+        		</inertial>
+			<visual>
+				<geometry>
+					<cylinder length="0.05" radius="0.05"/>
+				</geometry>
+				<origin rpy="0 1.5 0" xyz="-0.1 -0.1 0"/>
+				<material name="black">
+					<color rgba="0 0 0 1"/>
+				</material>
+			</visual>
+	    		<collision>
+				<geometry>
+		    			<box size="0.21 0.3 0.11"/>
+				</geometry>
+	    		</collision>
+		</link>
+		<joint name="base_to_wheel1" type="continuous">
+			<parent link="base_link"/>
+			<child link="wheel_1"/>
+			<joint_properties damping="20.0" friction="20.0"/>
+		</joint>
 		
-		<joint_properties damping="20.0" friction="20.0"/>
-	</joint>
-
-
-	<joint name="base_to_wheel_4" type="continuous">
+		<joint name="base_to_wheel2" type="continuous">
+			<parent link="base_link"/>
+			<child link="wheel_2"/>
+			<joint_properties damping="20.0" friction="20.0"/>
+		</joint>
 		
-		<joint_properties damping="20.0" friction="20.0"/>
-	</joint>
-</robot>
+		<joint name="base_to_wheel3" type="continuous">
+			<parent link="base_link"/>
+			<child link="wheel_3"/>
+			<joint_properties damping="20.0" friction="20.0"/>
+		</joint>
+		
+		<joint name="base_to_wheel4" type="continuous">
+			<parent link="base_link"/>
+			<child link="wheel_4"/>
+			<joint_properties damping="20.0" friction="20.0"/>
+		</joint>
+	</robot>
+
