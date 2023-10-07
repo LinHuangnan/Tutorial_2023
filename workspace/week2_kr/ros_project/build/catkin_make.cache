@@ -1,0 +1,2 @@
+little_car
+-DCATKIN_DEVEL_PREFIX=/home/kr/ros_project/devel -DCMAKE_INSTALL_PREFIX=/home/kr/ros_project/install -G Unix Makefiles

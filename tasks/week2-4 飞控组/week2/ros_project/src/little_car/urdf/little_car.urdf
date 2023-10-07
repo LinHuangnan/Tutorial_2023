@@ -6,13 +6,49 @@
 			视图为一个0.3×0.2×0.1的蓝色长方体，
 			碰撞箱为0.21×0.3×0.11
 			质量为10 -->
+		<inertial>
+			<origin xyz = "0 0 0.05" rpy = "0 0 0"/>
+			<mass value = "10"/>
+			<inertia ixx="1"  ixy="0"  ixz="0" iyy="1" iyz="0" izz="1" />
+		</inertial>
 		
+		<visual>
+			<oringin xyz = "0 0 0" rpy = "0 0 0"/>
+			<geometry>
+				<box size = "0.3 0.2 0.1"/>
+			</geometry>
+			<material name = "Blue">
+				<color rgba = "0 0 0.8 1"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz = "0 0 0" rpy = "0 0 0"/>
+			<geometry>
+				<box size = "0.21 0.3 0.11">
+			</geometry>
+		</collision>
 	</link>
 
 	<!-- front wheel -->
 	<link name="wheel_1" > 
-		
-		<!-- 在此处搭一个轮子，
+		<inertial>
+			<origni xyz = "0 0 0" rpy = "0 0 0"/>
+			<mass value = "10"/>
+			<inertia ixx="1"  ixy="0"  ixz="0" iyy="1" iyz="0" izz="1" />
+		</inertia>
+		<visual>
+			<origin xyz = "0 0 0" rpy = "0 0 0"/>
+			<geometry>
+				<cylinder length = "0.05" radius = "0.05"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz = "0 0 0" rpy = "0 0 0"/>
+			<geometry>
+				<cylinder length = "0.05" radius = "0.05"/>
+			</geometry>
+		</collision>
+			<!-- 在此处搭一个轮子，
 			视图为一个0.05长，0.05半径的圆柱体，
 			碰撞箱同上
 			质量为10 -->
@@ -20,16 +56,67 @@
 	</link>
 
 	<link name="wheel_2" >
+		<inertial>
+			<origni xyz = "0 0 0" rpy = "0 0 0"/>
+			<mass value = "10"/>
+			<inertia ixx="1"  ixy="0"  ixz="0" iyy="1" iyz="0" izz="1" />
+		</inertia>
+		<visual>
+			<origin xyz = "0 0 0" rpy = "0 0 0"/>
+			<geometry>
+				<cylinder length = "0.05" radius = "0.05"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz = "0 0 0" rpy = "0 0 0"/>
+			<geometry>
+				<cylinder length = "0.05" radius = "0.05"/>
+			</geometry>
+		</collision>
 		<!--   同上一个轮子  -->
 	</link>
 
 
 	<link name="wheel_3" >
+		<inertial>
+			<origni xyz = "0 0 0" rpy = "0 0 0"/>
+			<mass value = "10"/>
+			<inertia ixx="1"  ixy="0"  ixz="0" iyy="1" iyz="0" izz="1" />
+		</inertia>
+		<visual>
+			<origin xyz = "0 0 0" rpy = "0 0 0"/>
+			<geometry>
+				<cylinder length = "0.05" radius = "0.05"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz = "0 0 0" rpy = "0 0 0"/>
+			<geometry>
+				<cylinder length = "0.05" radius = "0.05"/>
+			</geometry>
+		</collision>
 		<!--   同上一个轮子  -->
 	</link>
 
 
 	<link name="wheel_4" >
+		<inertial>
+			<origni xyz = "0 0 0" rpy = "0 0 0"/>
+			<mass value = "10"/>
+			<inertia ixx="1"  ixy="0"  ixz="0" iyy="1" iyz="0" izz="1" />
+		</inertia>
+		<visual>
+			<origin xyz = "0 0 0" rpy = "0 0 0"/>
+			<geometry>
+				<cylinder length = "0.05" radius = "0.05"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz = "0 0 0" rpy = "0 0 0"/>
+			<geometry>
+				<cylinder length = "0.05" radius = "0.05"/>
+			</geometry>
+		</collision>
 		<!--   同上一个轮子  -->
 	</link>
 
@@ -43,23 +130,36 @@
 		tips:转轴定为z轴（初始圆柱体正立放置）
 			origin的xyz偏移按照上面的箱子计算得出，rpy绕y轴转90度（urdf中为弧度制）
 			-->
+		<parent link = "base_link"/>
+		<child link = "whell_1"/>
+		<axis xyz = "0 0 -1"/>
+		<origin rpy = "0 1.5707 0" xyz = "0.14 0.09 0.06"
 		<joint_properties damping="20.0" friction="20.0"/>
 	</joint>
 
 	<joint name="base_to_wheel_2" type="continuous">
-		
+		<parent link = "base_link"/>
+		<child link = "whell_2"/>
+		<axis xyz = "0 0 1"/>
+		<origin rpy = "0 1.5707 0" xyz = "-0.14 0.09 0.06"
 		<joint_properties damping="20.0" friction="20.0"/>
 	</joint>
 
 
 	<joint name="base_to_wheel_3" type="continuous">
-		
+		<parent link = "base_link"/>
+		<child link = "whell_3"/>
+		<axis xyz = "0 0 1"/>
+		<origin rpy = "0 1.5707 0" xyz = "-0.14 -0.09 0.06"
 		<joint_properties damping="20.0" friction="20.0"/>
 	</joint>
 
 
 	<joint name="base_to_wheel_4" type="continuous">
-		
+		<parent link = "base_link"/>
+		<child link = "whell_4"/>
+		<axis xyz = "0 0 -1"/>
+		<origin rpy = "0 1.5707 0" xyz = "0.14 -0.09 0.06"
 		<joint_properties damping="20.0" friction="20.0"/>
 	</joint>
 </robot>
