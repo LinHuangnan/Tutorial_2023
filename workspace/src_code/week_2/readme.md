@@ -8,3 +8,8 @@
 ![Alt text](./../../image/week_2/image_1_2.png)
 
 *截至2023.10.6*仅完成任务1，同时udrf模型文件，但仍存在问题
+
+#### 任务二
++ 完成了小车urdf模型的搭建，如图所示
+![Alt text](./../../image/week_2/image_2_1.png)
+>*源码中的launch文件有误，耗了很多时间*
