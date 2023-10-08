@@ -22,12 +22,12 @@ int main(int argc, char** argv) {
 	 *若有需要，也可以从小车处发布你所需要的信息
 	 */
     ros::Rate loop_rate(60);
-	SVector3 velocity={0,0,0};  //速度向量
+	SVector3 velocity={0.01,0,0};  //速度向量
 	car.set_noise_level(0);		   //设置噪声等级
 	float yaw = 0.0;
     while (ros::ok()) {
-	//	yaw += 0.01;
-	//	car.set_yaw(yaw); 		   //修改小车的方向
+		// yaw += 0.01;
+		car.set_yaw(1.5707); 		   //修改小车的方向
 		car.set_velocity(velocity);//设置小车速度
         car.update_();//小车状态更新
 		loop_rate.sleep();
