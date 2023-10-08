@@ -22,6 +22,5 @@
 + 完成了小车模型的补充，可以通过```roslaunch launch/little_car.launch```命令来查看，效果如图
 ![Alt text](./../../image/week_2/image_3_2.png)
 + 完成了publisher控制小车转弯，可以在无噪声的情况下走s弯，可以通过```roslaunch launch/launch_turn_s.launch```命令来查看效果
-+ 完成了在有噪声的情况下小车转s弯，但pid参数没有调好，故效果不佳，
-+ 可以通过```roslaunch launch/launch_show_noise.launch```来查看小车没有进行pid控制时在有噪声情况下的行驶效果，同时可以通过```roslaunch launch/launch_turn_s_noise.launch```来查看经过pid控制后小车的行驶效果
++ 完成了在有噪声的情况下小车转s弯，但pid参数没有调好，故效果不佳，可以通过```roslaunch launch/launch_show_noise.launch```来查看小车没有进行pid控制时在有噪声情况下的行驶效果，同时可以通过```roslaunch launch/launch_turn_s_noise.launch```来查看经过pid控制后小车的行驶效果
 + pid控制代码在```workspace/src_code/week_2/ros_project/src/car_turn/src```中
