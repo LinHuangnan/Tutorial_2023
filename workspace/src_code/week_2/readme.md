@@ -17,7 +17,7 @@
 ~~*截至2023.10.6*仅完成任务1，同时补充了udrf模型文件，但仍存在问题~~
 #### 更新
 + 第二周任务源码均在```ros_project```下
-+ 完成了```service```和```client```的编写，并能够用```.launch```文件来启动，包源码为```srv_cli```，可以通过```roslaunch launch_pkg srv_and_cli.launch```来启动,效果如下
++ 完成了```service```和```client```的编写，并能够用```.launch```文件来启动，可以通过```roslaunch launch_pkg srv_and_cli.launch```来启动,效果如下
 ![Alt text](./../../image/week_2/image_3_1.png)
 + 完成了小车模型的补充，可以通过```roslaunch launch/little_car.launch```命令来查看，效果如图
 ![Alt text](./../../image/week_2/image_3_2.png)
