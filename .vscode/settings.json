@@ -1,5 +1,7 @@
 {
     "files.associations": {
-        "ratio": "cpp"
+        "ratio": "cpp",
+        "unordered_map": "cpp",
+        "unordered_set": "cpp"
     }
 }

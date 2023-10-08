@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(carturn)
+project(car_turn)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
@@ -10,7 +10,9 @@ project(carturn)
 find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
-  stdmsgs
+  std_msgs
+  message_generation
+  geometry_msgs
 )
 
 ## System dependencies are found with CMake's conventions
@@ -47,11 +49,11 @@ find_package(catkin REQUIRED COMPONENTS
 ##   * add every package in MSG_DEP_SET to generate_messages(DEPENDENCIES ...)
 
 ## Generate messages in the 'msg' folder
-# add_message_files(
-#   FILES
-#   Message1.msg
+ add_message_files(
+  FILES
+  yaw_v.msg
 #   Message2.msg
-# )
+ )
 
 ## Generate services in the 'srv' folder
 # add_service_files(
@@ -68,10 +70,10 @@ find_package(catkin REQUIRED COMPONENTS
 # )
 
 ## Generate added messages and services with any dependencies listed here
-# generate_messages(
-#   DEPENDENCIES
-#   std_msgs  # Or other packages containing msgs
-# )
+ generate_messages(
+   DEPENDENCIES
+   std_msgs  # Or other packages containing msgs
+ )
 
 ################################################
 ## Declare ROS dynamic reconfigure parameters ##
@@ -104,8 +106,8 @@ find_package(catkin REQUIRED COMPONENTS
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
 #  INCLUDE_DIRS include
-#  LIBRARIES carturn
-#  CATKIN_DEPENDS roscpp rospy stdmsgs
+#  LIBRARIES car_turn
+  CATKIN_DEPENDS roscpp rospy std_msgs message_runtime
 #  DEPENDS system_lib
 )
 
@@ -122,7 +124,7 @@ include_directories(
 
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
-#   src/${PROJECT_NAME}/carturn.cpp
+#   src/${PROJECT_NAME}/car_turn.cpp
 # )
 
 ## Add cmake target dependencies of the library
@@ -133,7 +135,10 @@ include_directories(
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
-# add_executable(${PROJECT_NAME}_node src/carturn_node.cpp)
+ add_executable(turn_node_s src/turn_s.cpp)
+ add_executable(turn_node_s_noise src/turn_s_noise.cpp src/pid.cpp)
+ add_executable(test_node src/test.cpp)
+ add_executable(noise_node src/noise.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -146,10 +151,18 @@ include_directories(
 # add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
-# target_link_libraries(${PROJECT_NAME}_node
-#   ${catkin_LIBRARIES}
-# )
-
+ target_link_libraries(turn_node_s
+ ${catkin_LIBRARIES}
+)
+target_link_libraries(turn_node_s_noise
+${catkin_LIBRARIES}
+)
+target_link_libraries(test_node
+${catkin_LIBRARIES}
+)
+target_link_libraries(noise_node
+${catkin_LIBRARIES}
+)
 #############
 ## Install ##
 #############
@@ -197,7 +210,7 @@ include_directories(
 #############
 
 ## Add gtest based cpp test target and link libraries
-# catkin_add_gtest(${PROJECT_NAME}-test test/test_carturn.cpp)
+# catkin_add_gtest(${PROJECT_NAME}-test test/test_car_turn.cpp)
 # if(TARGET ${PROJECT_NAME}-test)
 #   target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME})
 # endif()
