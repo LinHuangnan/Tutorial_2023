@@ -24,6 +24,6 @@ Author：@LiangBeiming（梁倍铭）
 
 ## 文件夹说明
 + ```src_code``` 存储考核主要代码
-+ ```image``` 存储文档图片资源
+ ```image``` 存储文档图片资源
 
 
