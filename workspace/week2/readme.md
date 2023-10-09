@@ -6,9 +6,7 @@
 
 以下是运行结果截图
 [服务通信运行截图.png](https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week2/week2_asset/%E6%9C%8D%E5%8A%A1%E9%80%9A%E4%BF%A1%E8%BF%90%E8%A1%8C%E6%88%AA%E5%9B%BE.png)
-<video width="320" height="240" controls>
-    <source src="https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week2/week2_asset/%E6%9C%8D%E5%8A%A1%E9%80%9A%E4%BF%A1%E8%BF%90%E8%A1%8C%E6%88%AA%E5%9B%BE.png" type="video/mp4">
-</video>
+
 ## 2.使用launch来启动节点
 编写了一个小海龟启动节点来运行，参见`week2_code/service_pkg/launch`
 [launch文件例子.png](https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week2/week2_asset/launch%E6%96%87%E4%BB%B6%E4%BE%8B%E5%AD%90.png)
