@@ -20,7 +20,7 @@ Author：@LiangBeiming（梁倍铭）
 #### 总述
 + ubuntu版本为Ubuntu 20.04.6 LTS
 + cmake版本为version 3.16.3
-+ 编辑器为vscode、vim
++ 编辑器为vscode、vim、pycharm
 
 ## 文件夹说明
 + ```src_code``` 存储考核主要代码
