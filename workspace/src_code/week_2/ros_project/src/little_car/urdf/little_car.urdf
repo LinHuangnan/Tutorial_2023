@@ -38,8 +38,8 @@
 			<geometry>
 				<cylinder radius="0.05" length="0.05"/>
 			</geometry>
-			<material name="blue">
-				<color rgba="0 0 1 1"/>
+			<material name="red">
+				<color rgba="1 0 0 1"/>
 			</material>
 		</visual>
 		<collision>
@@ -60,6 +60,9 @@
 			<geometry>
 				<cylinder radius="0.05" length="0.05"/>
 			</geometry>
+			<material name="red">
+				<color rgba="1 0 0 1"/>
+			</material>
 		</visual>
 		<collision>
 			<geometry>
@@ -79,6 +82,9 @@
 			<geometry>
 				<cylinder radius="0.05" length="0.05"/>
 			</geometry>
+			<material name="red">
+				<color rgba="1 0 0 1"/>
+			</material>
 		</visual>
 		<collision>
 			<geometry>
@@ -98,6 +104,9 @@
 			<geometry>
 				<cylinder radius="0.05" length="0.05"/>
 			</geometry>
+			<material name="red">
+				<color rgba="1 0 0 1"/>
+			</material>
 		</visual>
 		<collision>
 			<geometry>
@@ -106,7 +115,7 @@
 		</collision>
 		<inertial>
 			<mass value="10"/>
-			<inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>>
+			<inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
 		</inertial>
 	</link>
 
