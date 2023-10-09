@@ -7,5 +7,5 @@
 <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
 <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" required="true" />
 <node name="little_car_node" pkg="little_car" type="little_car_node"/>
-<node name="publisher" pkg="pub_cmd" type="publisher"/>
+<node name="sub_angular" pkg="pub_cmd" type="sub_angular" output ="screen"/>
 </launch>

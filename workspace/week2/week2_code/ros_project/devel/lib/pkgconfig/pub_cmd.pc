@@ -1,8 +1,0 @@
-prefix=/home/yuanyue/ros_project/devel
-
-Name: pub_cmd
-Description: Description of pub_cmd
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

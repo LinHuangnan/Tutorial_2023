@@ -1,8 +1,0 @@
-prefix=/home/yuanyue/ros_project/devel
-
-Name: little_car
-Description: Description of little_car
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
