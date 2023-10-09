@@ -14,23 +14,32 @@
 参见`week2_code/ros_project/little_car/urdf`
 [小车模型.png](https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week2/week2_asset/%E5%B0%8F%E8%BD%A6%E6%A8%A1%E5%9E%8B.png)
 
+## 5.利用publisher实现小车转弯
+经过测试发现，虽然可以改变yaw值使小车转动，但是在odom下观察，改变`S3vector`类型的`velocity`的值是改变绝对坐标系的，不是改变相对于小车自己坐标系的
+于是出现一边平移一边旋转的情况
+
+为了实现像`geometry_msgs/Twist`类型的线速度，速度方向是小车自己x轴方向发效果
+我的解决方案如下：
+1. 通过发布的话题`/tf`，在另外一个功能包的`sub_angular`里面编写一个订阅者，获取小车自己坐标系x轴和绝对坐标系x轴的欧拉角四元数数值
+2. 然后在`sub_angular`转换成小车自己坐标系x轴和绝对坐标系x轴的夹角
+3. 接着在`sub_angular`将其分别转换成三角函数的形式，得到从绝对坐标系转换成小车坐标系x轴和y轴两个方向的权重
+4. 再在`sub_angular`编写一个发布者，将权重信息发布给`main.cpp`的节点
+5. 在`main.cpp`里面把权重信息添加给`S3vector`类型的`velocity`的值
+
+协调两个节点的发布频率，并将`sub_angular`添加一点休眠时间，用`roslaunch`同时去启动
+
+利用`yaw`持续缓慢增加，导致小车x轴和绝对坐标轴的夹角持续缓慢增加，而提高速度比重，实现转弯
+
+不足之处，由于响应需要一定时间，速度方向的调整有一定的延迟，但轨迹还是可以转弯
+## 6.在1级噪声下实现小车S形转弯
+其中，利用`yaw`持续增加，导致小车x轴和绝对坐标轴的夹角持续增加
+而该夹角的三角函数值是周期变化的，实现小车的S形转弯
+
+不足之处，由于响应需要一定时间，速度方向的调整有一定的延迟，但轨迹还是可以转弯
 
 # 未完成的部分与目前进度
 
-## 4.本来打算在完成5和6后才完成
-## 5.编写完publisher与subscriber，但控制效果不理想
-能够实现publisher和subscriber的通信，但是在odom下显示为白色模型，在base_link下看不出来
-代码见`/week2_code/ros_project/little_car/src/`
+## 4.已经在学习soliddworks
 
-[目前进度1.png](https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week2/week2_asset/%E7%9B%AE%E5%89%8D%E8%BF%9B%E5%BA%A61.png)
 
-而且虽然发现可以改变yaw值使小车转动，但是在odom下观察，改变S3vector类型的velocity的值是改变绝对坐标系的，不是改变相对于小车自己坐标系的
-于是出现一边平移一边旋转的情况
 
-是不是通过设定小车相对绝对坐标系的速度，来转换成小车相对小车自己坐标系的速度，
-比如通过某种操作设定好绝对速度，希望让小车无论怎么转弯都是相对自己坐标系x轴方向0.01m/s
-感觉好怪异，为什么Svector3给出的不是相对自己本身坐标系的速度
-
-目前还没有熟悉TF包，不知道是不是要使用坐标变换，希望下次任务说明可以更加详尽一些QAQ
-
-## 6. 需要在5的基础上解决
