@@ -29,17 +29,21 @@
 协调两个节点的发布频率，并将`sub_angular`添加一点休眠时间，用`roslaunch`同时去启动
 
 利用`yaw`持续缓慢增加，导致小车x轴和绝对坐标轴的夹角持续缓慢增加，而提高速度比重，实现转弯
-
+[利用publisher实现转弯.mp4](https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week2/week2_asset/%E5%88%A9%E7%94%A8publisher%E5%AE%9E%E7%8E%B0%E8%BD%AC%E5%BC%AF.mp4)
 不足之处，由于响应需要一定时间，速度方向的调整有一定的延迟，但轨迹还是可以转弯
 ## 6.在1级噪声下实现小车S形转弯
 其中，利用`yaw`持续增加，导致小车x轴和绝对坐标轴的夹角持续增加
 而该夹角的三角函数值是周期变化的，实现小车的S形转弯
 
+[无噪声s形状转弯.mp4](https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week2/week2_asset/%E6%97%A0%E5%99%AA%E5%A3%B0s%E5%BD%A2%E7%8A%B6%E8%BD%AC%E5%BC%AF.mp4)
+
+[1级噪声s形状转弯.mp4](https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week2/week2_asset/1%E7%BA%A7%E5%99%AA%E5%A3%B0s%E5%BD%A2%E7%8A%B6%E8%BD%AC%E5%BC%AF.mp4)
+
 不足之处，由于响应需要一定时间，速度方向的调整有一定的延迟，但轨迹还是可以转弯
+
 
 # 未完成的部分与目前进度
 
-## 4.已经在学习soliddworks
-
+## 4.已经在学习soliddworks  (QAQ)
 
 
