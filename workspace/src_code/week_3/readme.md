@@ -16,6 +16,18 @@
 + 成功在windows系统下配置了python和Anaconda环境，如图下图所示
 ![Alt text](./../../image/week_3/yolov5/image_1.png)
 ![Alt text](./../../image/week_3/yolov5/image_2.png)
-+ 成功部署了```YOLOv5```模型，所部署的发布版本为```v7.0```，并成功运行```detect.py```，如下图所示
-![Alt text](./../../image/week_3/yolov5/image_3.png)
++ 成功部署了```YOLOv5```模型，所部署的发布版本为```v7.0```
 + 所部署的```yolov5```环境配置文件```yolov5.yaml```在```workspace\src_code\week_3\yolov5```文件夹中
++ 成功运行```detect.py```，如下图所示
+![Alt text](./../../image/week_3/yolov5/image_3.png)
++ 同时用```v5s```来检测其他图片，结果如下
+![Alt text](./../../image/week_3/yolov5/image_4.png)
+![Alt text](./../../image/week_3/yolov5/image_5.png)
+![Alt text](./../../image/week_3/yolov5/image_6.png)
+![Alt text](./../../image/week_3/yolov5/image_7.png)
+![Alt text](./../../image/week_3/yolov5/image_8.png)
+![Alt text](./../../image/week_3/yolov5/image_9.png)
+![Alt text](./../../image/week_3/yolov5/image_10.png)
++ 因没有摄像头，采用https作为视频流输入，[yolov5源码中油管视频地址](https://wwvg.lanzouj.com/iMySA1bdblgj),[哔哩哔哩中的视频检测](https://wwvg.lanzouj.com/i9xAc1bdbn9e)
+
+##### 所有基础任务全部完成！！！
