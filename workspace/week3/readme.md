@@ -5,7 +5,7 @@
 ## 1.成功部署整个ros_workspace
 完成了基本的环境配置
 下面是roslaunch后的截图
-![[roslaunch后的截图.png]]
+[roslaunch后的截图.png](https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week3/week3_asset/roslaunch%E5%90%8E%E7%9A%84%E6%88%AA%E5%9B%BE.png)
 
 ## 2.till next time
 最近三周学校的课表一直挺紧的，特别是这周国庆调休作业挺多
@@ -34,9 +34,9 @@ http://pypi.douban.com/simple/
 并且从github上下载的源码要作为独立的工作空间打开才可以正常编译
 
 以下是相关结果截图
-![[配置环境.png]]
+[配置环境.png](https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week3/week3_asset/%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83.png)
 
-![[待完成的安装依赖包的脚本.png]]
+[待完成的安装依赖包的脚本.png](https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week3/week3_asset/%E5%BE%85%E5%AE%8C%E6%88%90%E7%9A%84%E5%AE%89%E8%A3%85%E4%BE%9D%E8%B5%96%E5%8C%85%E7%9A%84%E8%84%9A%E6%9C%AC.png)
 ## 2.部署yolov5模型，检测实验样例
 
 ![[实例.png]]
