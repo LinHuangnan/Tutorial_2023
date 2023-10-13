@@ -5,7 +5,7 @@
 ## 1.成功部署整个ros_workspace
 完成了基本的环境配置
 下面是roslaunch后的截图
-[roslaunch后的截图.png](https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week3/week3_asset/roslaunch%E5%90%8E%E7%9A%84%E6%88%AA%E5%9B%BE.png)
+[roslaunch后的截图.png](workspace/week3/week3_asset/待完成的安装依赖包的脚本.png)
 
 ## 2.till next time
 最近三周学校的课表一直挺紧的，特别是这周国庆调休作业挺多
