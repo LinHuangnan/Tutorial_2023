@@ -1,8 +1,0 @@
-prefix=/home/jerry/ros_project/devel
-
-Name: little_car_control
-Description: Description of little_car_control
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

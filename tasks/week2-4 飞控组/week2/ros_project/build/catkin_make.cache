@@ -1,2 +1,0 @@
-little_car:little_car_control
--DCATKIN_DEVEL_PREFIX=/home/jerry/ros_project/devel -DCMAKE_INSTALL_PREFIX=/home/jerry/ros_project/install -G Unix Makefiles
