@@ -83,7 +83,7 @@ mkdir src
 
 1.2 将Onboard-SDK-ROS-3.7.0文件夹下的dji_sdk和dji_sdk_demo放到src文件夹下
 
-[Onboard-SDK-ROS-3.7.0下载地址](./package)
+[Onboard-SDK-ROS-3.7.0下载地址](./source)
 
 1.3 打开终端，进入tasks目录
 
