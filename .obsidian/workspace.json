@@ -8,30 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "64503d41faaa889d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "tasks/week2-4 飞控组/week2/task2_description.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7da8980c154410c8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "tasks/week2-4 飞控组/week2/task2_description.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "961f186868759830",
             "type": "leaf",
             "state": {
@@ -42,9 +18,20 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "632c6d5e0c4439aa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "tasks/week2-4 飞控组/week3/readme.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -173,40 +160,43 @@
   },
   "active": "961f186868759830",
   "lastOpenFiles": [
-    "workspace/readme.md",
-    "workspace/week3/week3_asset/roslaunch后的截图.png",
-    "workspace/week3/week3_code",
-    "workspace/week3/readme.md",
-    "workspace/week3/week3_asset",
+    "workspace/week3/week3_asset/模糊.jpg",
+    "workspace/week3/week3_asset/灰度.jpg",
+    "workspace/week3/week3_asset/待完成的安装依赖包的脚本.png",
+    "workspace/week3/week3_asset/边缘.jpg",
+    "workspace/week3/week3_asset/配置环境.png",
+    "workspace/week3/week3_asset/缩放.jpg",
+    "workspace/week3/week3_asset/视频流.png",
+    "workspace/week3/week3_asset/实例.png",
+    "workspace/week3/week3_asset/色度.jpg",
+    "workspace/week3/week3_asset/人脸识别.jpg",
+    "实例.png",
+    "workspace/week3/week3_code/yolov5-5.0/weights/download_weights.sh",
+    "workspace/week3/week3_code/yolov5-5.0/weights",
+    "workspace/week3/week3_code/yolov5-5.0/utils/__pycache__/__init__.cpython-36.pyc",
+    "workspace/week3/week3_code/yolov5-5.0/utils/__pycache__/torch_utils.cpython-36.pyc",
+    "workspace/week3/week3_code/yolov5-5.0/utils/__pycache__/plots.cpython-36.pyc",
+    "workspace/week3/week3_code/yolov5-5.0/utils/__pycache__/metrics.cpython-36.pyc",
+    "workspace/week3/week3_code/yolov5-5.0/utils/__pycache__/google_utils.cpython-36.pyc",
+    "workspace/week3/week3_code/yolov5-5.0/utils/__pycache__/general.cpython-36.pyc",
+    "workspace/week3/week3_code/yolov5-5.0/utils/__pycache__/datasets.cpython-36.pyc",
+    "workspace/week3/week3_code/yolov5-5.0/utils/__pycache__/autoanchor.cpython-36.pyc",
+    "workspace/week3/week3_code/yolov5-5.0/README.md",
     "tasks/week2-4 飞控组/week3/readme.md",
-    "tasks/week2-4 飞控组/week3/environment_setup.md",
-    "workspace/week3",
-    "tasks/week2-4 飞控组/week2/readme.md",
-    "tasks/week2-4 飞控组/readme.md",
+    "workspace/week3/readme.md",
+    "tasks/week2-4 视觉组/视觉组第3周考核任务/readme.md",
+    "未命名.md",
+    "tasks/week2-4 飞控组/week2/task2_description.md",
     "tasks/week2-4 视觉组/视觉组第4周考核任务/readme.md",
     "tasks/week2-4 视觉组/readme.md",
+    "workspace/readme.md",
+    "tasks/week2-4 飞控组/week3/environment_setup.md",
+    "tasks/week2-4 飞控组/week2/readme.md",
+    "tasks/week2-4 飞控组/readme.md",
     "workspace/week1/readme.md",
     "workspace/week2/readme.md",
-    "workspace/week2/week2_code/ros_project/build/little_car/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/progress.make",
-    "workspace/week2/week2_code/ros_project/build/little_car/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/DependInfo.cmake",
-    "workspace/week2/week2_code/ros_project/build/little_car/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/depend.make",
-    "workspace/week2/week2_code/ros_project/build/little_car/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/depend.internal",
-    "workspace/week2/week2_code/ros_project/build/little_car/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/cmake_clean.cmake",
-    "workspace/week2/week2_code/ros_project/build/little_car/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build.make",
-    "workspace/week2/week2_code/ros_project/build/little_car/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir",
-    "tasks/week2-4 飞控组/week2/task2_description.md",
-    "tasks/week2-4 视觉组/视觉组第3周考核任务/readme.md",
-    "tasks/week2-4 飞控组/week3/image/image6.jpg",
-    "tasks/week2-4 飞控组/week3/image/image5.jpg",
-    "tasks/week2-4 飞控组/week3/image/image4.jpg",
-    "tasks/week2-4 飞控组/week3/image/image3.jpg",
-    "tasks/week2-4 飞控组/week3/image/image2.jpg",
-    "tasks/week2-4 飞控组/week3/image/image1.jpg",
     "tasks/week2-4 飞控组/week3/code_explanation.md",
-    "workspace/week2/week2_asset/launch文件例子.png",
     "tasks/week1（基础考核）/readme.md",
-    "workspace/week2/week2_asset/目前进度1.png",
-    "workspace/week2/week2_asset/小车模型.png",
     "workspace/week2/week2_asset/服务通信总结.md",
     "doc/基于STM32完成考核.md",
     "doc/补充知识一.md",
@@ -215,8 +205,6 @@
     "doc/补充知识五.md",
     "doc/补充知识四.md",
     "doc/readme.md",
-    "doc/环境配置与准备.md",
-    "doc/飞控：基于Ros完成考核.md",
-    "tasks/week2-4 机械组/机械组第1周考核任务/readme.md"
+    "doc/环境配置与准备.md"
   ]
 }
