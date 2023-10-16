@@ -11,10 +11,13 @@ int main(int argc ,char *argv[])
 {
     cout<<argv[0]<<endl;
     string filepath;
+    Recovery rec;
+    
     if(argc==2)
     {
         filepath=argv[1];
         cout<<filepath;
+        rec.readVideo(filepath);
     }
     else if(argc>2)
     {
