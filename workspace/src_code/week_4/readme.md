@@ -12,3 +12,7 @@
 + 过程如下
 ![Alt text](../../image/week_4/image_3.png)
 + [程序下载地址](https://wwvg.lanzouj.com/i9Mkr1c2gr9i)
+
+*更新*
+通过判断，对过大的图像进行压缩，可以成功处理视频二，效果如下
+![Alt text](../../image/week_4/image_4.jpg)

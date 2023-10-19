@@ -10,19 +10,27 @@ Mat Recovery::process()
     VideoCapture capture(filepath);
     if (!capture.isOpened())
     {
-        cout << "打开失败\n";
+        cout << "open faile\n";
     }
     Mat frame;
     Mat new_frame;
+    Mat frame2;
     // namedWindow("video");
     int frame_num = capture.get(CAP_PROP_FRAME_COUNT);
     // cout<<"帧数为："<<frame_num<<endl;
     for (int i = 0; i < frame_num - 1; i++)
     {
-
-        capture.read(frame);
+        capture.read(frame2);
+        if(frame2.cols>1500||frame2.rows>900)
+        {
+            resize(frame2,frame,Size(0,0),1500.0/(double)frame2.cols,1500.0/(double)frame2.cols);
+        }
+        else
+        {
+            frame=frame2;
+        }
         frame.copyTo(new_frame);
-        color_store(frame, i);
+        color_store(frame);
         // imshow("video",frame);
 
         // cout<<i<<endl;
@@ -33,8 +41,8 @@ Mat Recovery::process()
     }
     // destroyWindow("video");
     capture.release();
-    int x = color_g.size();
-    int y = color_g[0].size();
+    // int x = color_g.size();
+    // int y = color_g[0].size();
     reverse(color_b, b);
     reverse(color_g, g);
     reverse(color_r, r);
@@ -46,7 +54,7 @@ Mat Recovery::process()
     return new_frame;
 }
 
-void Recovery::color_store(Mat input_image, int num)
+void Recovery::color_store(Mat input_image)
 {
     Mat_<Vec3b>::iterator it = input_image.begin<Vec3b>();
     Mat_<Vec3b>::iterator itend = input_image.end<Vec3b>();
@@ -59,9 +67,9 @@ void Recovery::color_store(Mat input_image, int num)
         // (*it)[0]=(*it)[0]/div*div+div/2;
         // (*it)[1]=(*it)[1]/div*div+div/2;
         // (*it)[2]=(*it)[2]/div*div+div/2;
-        b = (*it)[0] = (*it)[0];
-        g = (*it)[1] = (*it)[1];
-        r = (*it)[2] = (*it)[2];
+        b = (*it)[0];
+        g = (*it)[1];
+        r = (*it)[2];
         // std::cout<<b;
         // std::cout<<g;
         // std::cout<<r<<std::endl;
