@@ -125,3 +125,7 @@ Author：@hyjack-00
 本周负责人：黄宇杰
 
 联系邮箱：huangyj285@mail2.sysu.edu.cn
+
+配置环境
+https://blog.csdn.net/qq_42950957/article/details/123899581
+
