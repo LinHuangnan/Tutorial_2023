@@ -34,17 +34,17 @@
 
 以下是运行截图
 **`video1`**
-![](1.png)
-![](1.1.png)
+![](https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week4/week4_asset/1.png)
+![](https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week4/week4_asset/1.1.png)
 **`video2`**
-![](2.png)
-![](2.1.png)
+![](https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week4/week4_asset/2.png)
+![](https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week4/week4_asset/2.1.png)
 
 **`video3`**
-![](3.png)
-![](3.1.png)
+![](https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week4/week4_asset/3.png)
+![](https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week4/week4_asset/3.1.png)
 # 2.使用makefile成功编译运行
-![](符合团队规范的目录结构.png)
-![](makefile.png)
+![](https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week4/week4_asset/符合团队规范的目录结构.png)
+![](https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week4/week4_asset/makefile.png)
 # 3.输出了程序运行计时
 见运行截图
