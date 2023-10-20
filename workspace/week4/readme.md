@@ -33,15 +33,18 @@
 最后显示背景还原后的彩色图像
 
 以下是运行截图
-**`video1`**
+## **`video1`**
 ![](https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week4/week4_asset/1.png)
+
 ![](https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week4/week4_asset/1.1.png)
-**`video2`**
+## **`video2`**
 ![](https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week4/week4_asset/2.png)
+
 ![](https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week4/week4_asset/2.1.png)
 
-**`video3`**
+## **`video3`**
 ![](https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week4/week4_asset/3.png)
+
 ![](https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week4/week4_asset/3.1.png)
 # 2.使用makefile成功编译运行
 ![](https://github.com/skyswordx/Tutorial_2023/blob/main/workspace/week4/week4_asset/符合团队规范的目录结构.png)
