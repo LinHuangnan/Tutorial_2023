@@ -25,3 +25,7 @@
 ![Alt text](../../image/week_4/image_5.png)
 ![Alt text](../../image/week_4/image_6.png)
 ![Alt text](../../image/week_4/image_7.png)
+
+#### *更新三*
++ 实现为ros的功能包，运行过程和结果如下
+![Alt text](../../image/week_4/image_8.png)

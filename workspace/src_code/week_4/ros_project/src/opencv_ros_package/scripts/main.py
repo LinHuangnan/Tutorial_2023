@@ -37,9 +37,10 @@ if __name__=='__main__':
     time_end=time.time()
     print("处理时间为：",time_end-time_start)
     while 1:
-        k=cv2.waitKey()
+        k=cv2.waitKey(10)
         if k==27:
             break
     cv2.imwrite("./result.jpg",img=image_result)
     print("文件已保存在当前目录下")
     cv2.destroyAllWindows()
+
