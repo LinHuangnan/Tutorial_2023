@@ -1,0 +1,2 @@
+dji_sdk:dji_sdk_demo
+-DCATKIN_DEVEL_PREFIX=/home/rosknetic/tasks/devel -DCMAKE_INSTALL_PREFIX=/home/rosknetic/tasks/install -G Unix Makefiles
