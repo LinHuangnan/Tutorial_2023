@@ -4,28 +4,36 @@
     "type": "split",
     "children": [
       {
-        "id": "7c16b184ec9d0946",
+        "id": "13c86c45191e4344",
         "type": "tabs",
+        "dimension": 64.15770609318996,
         "children": [
           {
-            "id": "961f186868759830",
+            "id": "a5cfce12b682cf4c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "workspace/week3/readme.md",
+                "file": "workspace/week4/readme.md",
                 "mode": "source",
                 "source": false
               }
             }
-          },
+          }
+        ]
+      },
+      {
+        "id": "95c632588ccfff73",
+        "type": "tabs",
+        "dimension": 35.842293906810035,
+        "children": [
           {
-            "id": "632c6d5e0c4439aa",
+            "id": "3aee81173e32b8cc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "tasks/week2-4 飞控组/week3/readme.md",
+                "file": "tasks/week2-4 视觉组/视觉组第4周考核任务/readme.md",
                 "mode": "source",
                 "source": false
               }
@@ -81,7 +89,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "0a7370f7b08c8c05",
@@ -97,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "workspace/week3/readme.md",
+                "file": "workspace/week4/readme.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "workspace/week3/readme.md",
+                "file": "workspace/week4/readme.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "workspace/week3/readme.md"
+                "file": "workspace/week4/readme.md"
               }
             }
           }
@@ -158,37 +167,40 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "961f186868759830",
+  "active": "a5cfce12b682cf4c",
   "lastOpenFiles": [
-    "workspace/week3/week3_asset/模糊.jpg",
-    "workspace/week3/week3_asset/灰度.jpg",
-    "workspace/week3/week3_asset/待完成的安装依赖包的脚本.png",
-    "workspace/week3/week3_asset/边缘.jpg",
-    "workspace/week3/week3_asset/配置环境.png",
-    "workspace/week3/week3_asset/缩放.jpg",
-    "workspace/week3/week3_asset/视频流.png",
-    "workspace/week3/week3_asset/实例.png",
-    "workspace/week3/week3_asset/色度.jpg",
-    "workspace/week3/week3_asset/人脸识别.jpg",
-    "实例.png",
-    "workspace/week3/week3_code/yolov5-5.0/weights/download_weights.sh",
-    "workspace/week3/week3_code/yolov5-5.0/weights",
-    "workspace/week3/week3_code/yolov5-5.0/utils/__pycache__/__init__.cpython-36.pyc",
-    "workspace/week3/week3_code/yolov5-5.0/utils/__pycache__/torch_utils.cpython-36.pyc",
-    "workspace/week3/week3_code/yolov5-5.0/utils/__pycache__/plots.cpython-36.pyc",
-    "workspace/week3/week3_code/yolov5-5.0/utils/__pycache__/metrics.cpython-36.pyc",
-    "workspace/week3/week3_code/yolov5-5.0/utils/__pycache__/google_utils.cpython-36.pyc",
-    "workspace/week3/week3_code/yolov5-5.0/utils/__pycache__/general.cpython-36.pyc",
-    "workspace/week3/week3_code/yolov5-5.0/utils/__pycache__/datasets.cpython-36.pyc",
-    "workspace/week3/week3_code/yolov5-5.0/utils/__pycache__/autoanchor.cpython-36.pyc",
-    "workspace/week3/week3_code/yolov5-5.0/README.md",
+    "workspace/week4/week4_asset/makefile.png",
+    "workspace/week4/week4_asset/符合团队规范的目录结构.png",
+    "workspace/week4/makefile.png",
+    "workspace/week4/符合团队规范的目录结构.png",
+    "workspace/makefile.png",
+    "workspace/符合团队规范的目录结构.png",
+    "workspace/week4/week4_asset/1.png",
+    "workspace/week4/week4_asset/1.1.png",
+    "workspace/week4/week4_asset/3.png",
+    "workspace/week4/week4_asset/3.1.png",
+    "workspace/week4/week4_asset/2.png",
+    "workspace/week4/week4_asset",
+    "workspace/week4/新建文件夹",
+    "workspace/week4/week4_code/opencv_cpp/src/main.cpp",
+    "workspace/week4/week4_code/opencv_cpp/include/Recovery.h",
+    "workspace/week4/week4_code/opencv_cpp/include/Recovery.cpp",
+    "workspace/week4/week4_code/opencv_cpp/bin/recover",
+    "workspace/week4/week4_code/opencv_cpp/build/main.o",
+    "workspace/week4/week4_code/opencv_cpp/src",
+    "workspace/week4/week4_code/opencv_cpp/makefile",
+    "workspace/week4/week4_code/opencv_cpp/resource",
+    "tasks/week2-4 视觉组/视觉组第4周考核任务/readme.md",
+    "workspace/week4/readme.md",
+    "doc/readme.md",
+    "tasks/week2-4 视觉组/readme.md",
     "tasks/week2-4 飞控组/week3/readme.md",
+    "tasks/week2-4 飞控组/week4/readme.md",
     "workspace/week3/readme.md",
+    "workspace/week3/week3_code/yolov5-5.0/README.md",
     "tasks/week2-4 视觉组/视觉组第3周考核任务/readme.md",
     "未命名.md",
     "tasks/week2-4 飞控组/week2/task2_description.md",
-    "tasks/week2-4 视觉组/视觉组第4周考核任务/readme.md",
-    "tasks/week2-4 视觉组/readme.md",
     "workspace/readme.md",
     "tasks/week2-4 飞控组/week3/environment_setup.md",
     "tasks/week2-4 飞控组/week2/readme.md",
@@ -202,9 +214,6 @@
     "doc/补充知识一.md",
     "doc/补充知识二.md",
     "doc/补充知识三.md",
-    "doc/补充知识五.md",
-    "doc/补充知识四.md",
-    "doc/readme.md",
-    "doc/环境配置与准备.md"
+    "doc/补充知识五.md"
   ]
 }
