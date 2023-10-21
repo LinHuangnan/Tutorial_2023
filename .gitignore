@@ -2,3 +2,5 @@ build/
 devel/
 .vscode/
 .idea/
+output/
+install/
